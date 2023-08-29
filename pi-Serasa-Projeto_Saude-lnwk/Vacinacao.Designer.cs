@@ -34,24 +34,36 @@ namespace pi_Serasa_Projeto_Saude_lnwk
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Vacinacao));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblVacinacao = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnTomarVacina = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(196)))), ((int)(((byte)(38)))));
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.lblVacinacao);
             this.panel1.Location = new System.Drawing.Point(2, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(800, 100);
             this.panel1.TabIndex = 0;
+            // 
+            // lblVacinacao
+            // 
+            this.lblVacinacao.AutoSize = true;
+            this.lblVacinacao.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblVacinacao.Location = new System.Drawing.Point(332, 26);
+            this.lblVacinacao.Name = "lblVacinacao";
+            this.lblVacinacao.Size = new System.Drawing.Size(252, 65);
+            this.lblVacinacao.TabIndex = 0;
+            this.lblVacinacao.Text = "Vacinação";
             // 
             // pictureBox1
             // 
@@ -63,62 +75,63 @@ namespace pi_Serasa_Projeto_Saude_lnwk
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // label1
+            // btnTomarVacina
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(332, 26);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(154, 40);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Vacinação";
+            this.btnTomarVacina.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnTomarVacina.Location = new System.Drawing.Point(15, 19);
+            this.btnTomarVacina.Name = "btnTomarVacina";
+            this.btnTomarVacina.Size = new System.Drawing.Size(270, 61);
+            this.btnTomarVacina.TabIndex = 2;
+            this.btnTomarVacina.Text = "Tomar Vacina";
+            this.btnTomarVacina.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnCancelar
             // 
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(334, 192);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(193, 38);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Tomar Vacina";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button2.Location = new System.Drawing.Point(368, 258);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(120, 39);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Cancelar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnCancelar.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnCancelar.Location = new System.Drawing.Point(69, 112);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(164, 46);
+            this.btnCancelar.TabIndex = 3;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(600, 192);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(140, 91);
+            this.pictureBox2.Size = new System.Drawing.Size(188, 154);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.btnTomarVacina);
+            this.panel2.Controls.Add(this.btnCancelar);
+            this.panel2.Location = new System.Drawing.Point(264, 121);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(297, 191);
+            this.panel2.TabIndex = 5;
             // 
             // Vacinacao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
             this.Name = "Vacinacao";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.Vacinacao_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -126,10 +139,11 @@ namespace pi_Serasa_Projeto_Saude_lnwk
         #endregion
 
         private Panel panel1;
-        private Label label1;
+        private Label lblVacinacao;
         private PictureBox pictureBox1;
-        private Button button1;
-        private Button button2;
+        private Button btnTomarVacina;
+        private Button btnCancelar;
         private PictureBox pictureBox2;
+        private Panel panel2;
     }
 }
