@@ -16,5 +16,30 @@ namespace pi_Serasa_Projeto_Saude_lnwk
         {
             InitializeComponent();
         }
+
+        private void ProcessoConcluido_Load(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Maximized;
+
+            ProcessoConcluido processoconcluido = new ProcessoConcluido();
+
+            label1 = new Label();
+
+
+            label1.AutoSize = true;
+            label1.Location = new Point(ClientSize.Width / 2 - label1.Size.Width / 2);
+
+
+            
+
+            panel1.Location = new Point(ClientSize.Width / 2 - panel1.Size.Width / 2);
+
+            pictureBox1.Size = new Size(ClientSize.Width, ClientSize.Height);
+
+
+
+        }
+
+
     }
 }

@@ -31,14 +31,16 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProcessoConcluido));
             label1 = new Label();
             pictureBox1 = new PictureBox();
+            panel1 = new Panel();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(270, 76);
+            label1.Location = new Point(53, 36);
             label1.Name = "label1";
             label1.Size = new Size(218, 30);
             label1.TabIndex = 0;
@@ -54,25 +56,37 @@
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
             // 
+            // panel1
+            // 
+            panel1.BackColor = Color.White;
+            panel1.Controls.Add(label1);
+            panel1.Location = new Point(242, 12);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(292, 91);
+            panel1.TabIndex = 2;
+            // 
             // ProcessoConcluido
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.HighlightText;
             ClientSize = new Size(800, 450);
+            Controls.Add(panel1);
             Controls.Add(pictureBox1);
-            Controls.Add(label1);
             ForeColor = SystemColors.ControlText;
             Name = "ProcessoConcluido";
             Text = "ProcessoConcluido";
+            Load += ProcessoConcluido_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
 
         private Label label1;
         private PictureBox pictureBox1;
+        private Panel panel1;
     }
 }
