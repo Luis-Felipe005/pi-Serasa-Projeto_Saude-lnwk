@@ -28,100 +28,128 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
-            this.SuspendLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HealtHub));
+            panel1 = new Panel();
+            label1 = new Label();
+            label2 = new Label();
+            textBox1 = new TextBox();
+            label3 = new Label();
+            textBox2 = new TextBox();
+            button1 = new Button();
+            pictureBox1 = new PictureBox();
+            pictureBox2 = new PictureBox();
+            panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(172)))), ((int)(((byte)(255)))));
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(1, 2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(797, 134);
-            this.panel1.TabIndex = 0;
+            panel1.BackColor = Color.FromArgb(139, 172, 255);
+            panel1.Controls.Add(label1);
+            panel1.Location = new Point(1, 2);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(797, 134);
+            panel1.TabIndex = 0;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(203, 44);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(353, 40);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Bem-Vindo ao HealtHub";
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(203, 44);
+            label1.Name = "label1";
+            label1.Size = new Size(353, 40);
+            label1.TabIndex = 0;
+            label1.Text = "Bem-Vindo ao HealtHub";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(193, 178);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(63, 32);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "CPF:";
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.Location = new Point(177, 175);
+            label2.Name = "label2";
+            label2.Size = new Size(63, 32);
+            label2.TabIndex = 2;
+            label2.Text = "CPF:";
             // 
             // textBox1
             // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(262, 178);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(226, 33);
-            this.textBox1.TabIndex = 3;
+            textBox1.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox1.Location = new Point(262, 178);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(226, 33);
+            textBox1.TabIndex = 3;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(167, 231);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(89, 32);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Senha:";
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.Location = new Point(167, 231);
+            label3.Name = "label3";
+            label3.Size = new Size(89, 32);
+            label3.TabIndex = 4;
+            label3.Text = "Senha:";
             // 
             // textBox2
             // 
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.Location = new System.Drawing.Point(262, 234);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(226, 33);
-            this.textBox2.TabIndex = 5;
+            textBox2.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox2.Location = new Point(262, 234);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(226, 33);
+            textBox2.TabIndex = 5;
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(311, 283);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(120, 40);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Entrar";
-            this.button1.UseVisualStyleBackColor = true;
+            button1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            button1.Location = new Point(311, 283);
+            button1.Name = "button1";
+            button1.Size = new Size(120, 40);
+            button1.TabIndex = 6;
+            button1.Text = "Entrar";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(107, 224);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(54, 43);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 7;
+            pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(107, 169);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(64, 49);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox2.TabIndex = 8;
+            pictureBox2.TabStop = false;
             // 
             // HealtHub
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Snow;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.panel1);
-            this.Name = "HealtHub";
-            this.Text = "HealtHub";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.LightSteelBlue;
+            ClientSize = new Size(800, 450);
+            Controls.Add(pictureBox2);
+            Controls.Add(pictureBox1);
+            Controls.Add(button1);
+            Controls.Add(textBox2);
+            Controls.Add(label3);
+            Controls.Add(textBox1);
+            Controls.Add(label2);
+            Controls.Add(panel1);
+            Name = "HealtHub";
+            Text = "HealtHub";
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -133,5 +161,7 @@
         private Label label3;
         private TextBox textBox2;
         private Button button1;
+        private PictureBox pictureBox1;
+        private PictureBox pictureBox2;
     }
 }
