@@ -64,12 +64,17 @@ namespace pi_Serasa_Projeto_Saude_lnwk
 
             panel2.Location = new Point(ClientSize.Width / 2 - panel2.Size.Width / 2, ClientSize.Height / 2 - panel2.Size.Height / 2);
 
-            label1.Location = new Point(panel1.Width / 2 - label1.Size.Width / 2);
+            label1.Location = new Point(panel1.Width / 2 - label1.Size.Width / 2); //centralizar o label no panel
 
             panel2.Size = new Size(ClientSize.Height, 200);
 
-            pictureBox1.Location = new System.Drawing.Point(0, Height - pictureBox1.Height);
+
+            panel3.Size = new Size (ClientSize.Width,200);
+
             
+
+
+
         }
     }
 
