@@ -34,8 +34,9 @@ namespace pi_Serasa_Projeto_Saude_lnwk
 
             panel1.Location = new Point(ClientSize.Width / 2 - panel1.Size.Width / 2);
 
-            pictureBox1.Size = new Size(ClientSize.Width, ClientSize.Height);
+            pictureBox1.Size = new Size(ClientSize.Width / 2, ClientSize.Height / 2);
 
+            pictureBox1.Location = new Point(ClientSize.Width / 2 - pictureBox1.Size.Width / 2, ClientSize.Height / 2);
 
 
         }
