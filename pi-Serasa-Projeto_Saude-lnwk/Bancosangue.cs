@@ -14,6 +14,11 @@ namespace pi_Serasa_Projeto_Saude_lnwk
     public partial class Bancosangue : Form
     {
 
+
+        
+
+
+
         private Panel panel;
         public Bancosangue()
         {
@@ -58,12 +63,12 @@ namespace pi_Serasa_Projeto_Saude_lnwk
         private void Bancosangue_Load(object sender, EventArgs e)
         {
 
-            
-            WindowState= FormWindowState.Maximized;
+
+            WindowState = FormWindowState.Maximized;
 
 
            
-            panel1.Size = new Size(ClientSize.Width, 200);
+            panel1.Size = new Size(ClientSize.Width, 100);
 
             panel2.Location = new Point(ClientSize.Width / 2 - panel2.Size.Width / 2, ClientSize.Height / 2 - panel2.Size.Height / 2);
 
@@ -83,6 +88,10 @@ namespace pi_Serasa_Projeto_Saude_lnwk
             int offsetX = 500; // Ajuste este valor conforme necessário
             pictureBox3.Location = new Point(offsetX, ClientSize.Height / 2 - pictureBox3.Size.Height / 2 + 200);
 
+
+
+           
+           
 
 
 
