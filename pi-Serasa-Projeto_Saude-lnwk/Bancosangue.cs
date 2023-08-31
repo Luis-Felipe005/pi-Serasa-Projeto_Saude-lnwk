@@ -56,6 +56,8 @@ namespace pi_Serasa_Projeto_Saude_lnwk
 
         private void Bancosangue_Load(object sender, EventArgs e)
         {
+
+            
             WindowState= FormWindowState.Maximized;
 
 
@@ -69,9 +71,22 @@ namespace pi_Serasa_Projeto_Saude_lnwk
             panel2.Size = new Size(ClientSize.Height, 200);
 
 
-            panel3.Size = new Size (ClientSize.Width,200);
+            pictureBox1.Size = new Size(ClientSize.Width, 200);
+           
 
-            
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
