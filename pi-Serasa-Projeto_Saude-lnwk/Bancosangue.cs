@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -72,7 +73,17 @@ namespace pi_Serasa_Projeto_Saude_lnwk
 
 
             pictureBox1.Size = new Size(ClientSize.Width, 200);
-           
+
+            pictureBox1.Location = new Point(ClientSize.Width / 2 - pictureBox1.Size.Width / 2, ClientSize.Height - pictureBox1.Size.Height);
+
+            pictureBox2.Location = new Point(ClientSize.Width / 2 - pictureBox2.Size.Width / 2 + 500, ClientSize.Height / 2 - pictureBox2.Size.Height / 2 + 200);
+
+            
+
+            int offsetX = 500; // Ajuste este valor conforme necessário
+            pictureBox3.Location = new Point(offsetX, ClientSize.Height / 2 - pictureBox3.Size.Height / 2 + 200);
+
+
 
 
 
