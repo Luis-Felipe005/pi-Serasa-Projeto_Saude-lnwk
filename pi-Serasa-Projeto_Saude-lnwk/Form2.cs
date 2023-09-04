@@ -31,5 +31,40 @@ namespace pi_Serasa_Projeto_Saude_lnwk
             lblOpcoes.Location = new Point(ClientSize.Width / 2 - lblOpcoes.Size.Width / 2);
 
         }
+
+        public void CarregaForms()
+        {
+            RecepcaoAtendente atendente = new RecepcaoAtendente();
+
+            atendente.Show();
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            HealtHub healthhub = new HealtHub();
+
+            healthhub.Show();
+
+        }
+
+        private void btnSangue_Click(object sender, EventArgs e)
+        {
+            CarregaForms();
+        }
+
+        private void btnVacina_Click(object sender, EventArgs e)
+        {
+            CarregaForms();
+        }
+
+        private void btnExame_Click(object sender, EventArgs e)
+        {
+            CarregaForms();
+        }
+
+        private void btnConsulta_Click(object sender, EventArgs e)
+        {
+            CarregaForms();
+        }
     }
 }
