@@ -28,5 +28,10 @@ namespace pi_Serasa_Projeto_Saude_lnwk
             painelMeio.Location = new Point(ClientSize.Width / 2 - painelMeio.Size.Width / 2, ClientSize.Height / 2 - painelMeio.Size.Height / 2);
 
         }
+
+        private void HealtHub_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
