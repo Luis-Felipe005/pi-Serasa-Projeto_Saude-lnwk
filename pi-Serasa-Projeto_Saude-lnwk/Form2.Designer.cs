@@ -28,28 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button3 = new Button();
+            btnVacina = new Button();
             lblOpcoes = new Label();
             panel1 = new Panel();
             panel2 = new Panel();
             painelMeio = new Panel();
-            button5 = new Button();
-            button4 = new Button();
-            button2 = new Button();
-            button1 = new Button();
+            btnCancelar = new Button();
+            btnConsulta = new Button();
+            btnExame = new Button();
+            btnSangue = new Button();
             panel1.SuspendLayout();
             painelMeio.SuspendLayout();
             SuspendLayout();
             // 
-            // button3
+            // btnVacina
             // 
-            button3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button3.Location = new Point(213, 10);
-            button3.Name = "button3";
-            button3.Size = new Size(178, 39);
-            button3.TabIndex = 2;
-            button3.Text = "Vacinações";
-            button3.UseVisualStyleBackColor = true;
+            btnVacina.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnVacina.Location = new Point(213, 10);
+            btnVacina.Name = "btnVacina";
+            btnVacina.Size = new Size(178, 39);
+            btnVacina.TabIndex = 2;
+            btnVacina.Text = "Vacinações";
+            btnVacina.UseVisualStyleBackColor = true;
+            btnVacina.Click += btnVacina_Click;
             // 
             // lblOpcoes
             // 
@@ -80,55 +81,59 @@
             // 
             // painelMeio
             // 
-            painelMeio.Controls.Add(button5);
-            painelMeio.Controls.Add(button4);
-            painelMeio.Controls.Add(button2);
-            painelMeio.Controls.Add(button1);
-            painelMeio.Controls.Add(button3);
+            painelMeio.Controls.Add(btnCancelar);
+            painelMeio.Controls.Add(btnConsulta);
+            painelMeio.Controls.Add(btnExame);
+            painelMeio.Controls.Add(btnSangue);
+            painelMeio.Controls.Add(btnVacina);
             painelMeio.Location = new Point(188, 96);
             painelMeio.Name = "painelMeio";
             painelMeio.Size = new Size(400, 265);
             painelMeio.TabIndex = 8;
             // 
-            // button5
+            // btnCancelar
             // 
-            button5.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button5.Location = new Point(114, 223);
-            button5.Name = "button5";
-            button5.Size = new Size(178, 39);
-            button5.TabIndex = 6;
-            button5.Text = "Cancelar";
-            button5.UseVisualStyleBackColor = true;
+            btnCancelar.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnCancelar.Location = new Point(114, 223);
+            btnCancelar.Name = "btnCancelar";
+            btnCancelar.Size = new Size(178, 39);
+            btnCancelar.TabIndex = 6;
+            btnCancelar.Text = "Cancelar";
+            btnCancelar.UseVisualStyleBackColor = true;
+            btnCancelar.Click += btnCancelar_Click;
             // 
-            // button4
+            // btnConsulta
             // 
-            button4.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button4.Location = new Point(213, 157);
-            button4.Name = "button4";
-            button4.Size = new Size(178, 39);
-            button4.TabIndex = 5;
-            button4.Text = "Consultas";
-            button4.UseVisualStyleBackColor = true;
+            btnConsulta.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnConsulta.Location = new Point(213, 157);
+            btnConsulta.Name = "btnConsulta";
+            btnConsulta.Size = new Size(178, 39);
+            btnConsulta.TabIndex = 5;
+            btnConsulta.Text = "Consultas";
+            btnConsulta.UseVisualStyleBackColor = true;
+            btnConsulta.Click += btnConsulta_Click;
             // 
-            // button2
+            // btnExame
             // 
-            button2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button2.Location = new Point(14, 157);
-            button2.Name = "button2";
-            button2.Size = new Size(178, 39);
-            button2.TabIndex = 4;
-            button2.Text = "Coleta De Exame";
-            button2.UseVisualStyleBackColor = true;
+            btnExame.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnExame.Location = new Point(14, 157);
+            btnExame.Name = "btnExame";
+            btnExame.Size = new Size(178, 39);
+            btnExame.TabIndex = 4;
+            btnExame.Text = "Coleta De Exame";
+            btnExame.UseVisualStyleBackColor = true;
+            btnExame.Click += btnExame_Click;
             // 
-            // button1
+            // btnSangue
             // 
-            button1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.Location = new Point(14, 10);
-            button1.Name = "button1";
-            button1.Size = new Size(178, 39);
-            button1.TabIndex = 3;
-            button1.Text = "Doação De Sangue";
-            button1.UseVisualStyleBackColor = true;
+            btnSangue.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnSangue.Location = new Point(14, 10);
+            btnSangue.Name = "btnSangue";
+            btnSangue.Size = new Size(178, 39);
+            btnSangue.TabIndex = 3;
+            btnSangue.Text = "Doação De Sangue";
+            btnSangue.UseVisualStyleBackColor = true;
+            btnSangue.Click += btnSangue_Click;
             // 
             // Form2
             // 
@@ -148,14 +153,14 @@
         }
 
         #endregion
-        private Button button3;
+        private Button btnVacina;
         private Label lblOpcoes;
         private Panel panel1;
         private Panel panel2;
         private Panel painelMeio;
-        private Button button5;
-        private Button button4;
-        private Button button2;
-        private Button button1;
+        private Button btnCancelar;
+        private Button btnConsulta;
+        private Button btnExame;
+        private Button btnSangue;
     }
 }
