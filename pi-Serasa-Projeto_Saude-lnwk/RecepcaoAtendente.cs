@@ -60,10 +60,10 @@ namespace pi_Serasa_Projeto_Saude_lnwk
 
         }
 
-       
-        
+        private void RecepcaoAtendente_Load_1(object sender, EventArgs e)
+        {
+            
 
-
-
+        }
     }
 }
