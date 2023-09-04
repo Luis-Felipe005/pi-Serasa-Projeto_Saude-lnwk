@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,13 @@ namespace pi_Serasa_Projeto_Saude_lnwk
 {
     public partial class RecepcaoAtendente : Form
     {
+       
         public RecepcaoAtendente()
         {
             InitializeComponent();
+            
+
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -49,6 +54,16 @@ namespace pi_Serasa_Projeto_Saude_lnwk
 
             pictureBox1.Location = new Point(ClientSize.Width / 2 - pictureBox1.Size.Width / 2 + 500, ClientSize.Height / 2 - pictureBox1.Size.Height / 2 + 100);
 
+
+
+
+
         }
+
+       
+        
+
+
+
     }
 }
