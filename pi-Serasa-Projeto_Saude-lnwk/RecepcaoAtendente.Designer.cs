@@ -102,6 +102,7 @@
             listView1.Size = new Size(296, 183);
             listView1.TabIndex = 7;
             listView1.UseCompatibleStateImageBehavior = false;
+            listView1.View = View.List;
             // 
             // panel2
             // 
@@ -122,6 +123,7 @@
             btnRecusar.TabIndex = 6;
             btnRecusar.Text = "RECUSAR";
             btnRecusar.UseVisualStyleBackColor = true;
+            btnRecusar.Click += btnRecusar_Click;
             // 
             // panel3
             // 

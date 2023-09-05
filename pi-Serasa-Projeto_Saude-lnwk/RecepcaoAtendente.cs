@@ -64,9 +64,15 @@ namespace pi_Serasa_Projeto_Saude_lnwk
         {
             Atendente atendente = new Atendente();
 
-            atendente.buscaTodos();
+            List<Atendente> atendentes = atendente.buscaTodos();
 
-           
+            foreach (Atendente a in atendentes)
+            {
+                listView1.Items.Add(a.nome);
+                listView1.Items.Add(a.cpf);
+                listView1.Items.Add(a.idade.ToString());
+                listView1.Items.Add(a.sexo);
+            }
 
         }
 
@@ -76,6 +82,13 @@ namespace pi_Serasa_Projeto_Saude_lnwk
 
             bancosangue.Show();
 
+        }
+
+        private void btnRecusar_Click(object sender, EventArgs e)
+        {
+            HealtHub healtHub = new HealtHub();
+
+            healtHub.Show();
         }
     }
 }
