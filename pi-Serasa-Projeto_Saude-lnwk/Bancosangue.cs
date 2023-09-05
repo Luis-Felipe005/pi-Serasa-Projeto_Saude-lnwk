@@ -104,29 +104,7 @@ namespace pi_Serasa_Projeto_Saude_lnwk
             ((TableLayoutPanel)panel1.Controls[0]).Size = panel1.Size;
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         }
-
         private void FecharTelasAnteriores()
         {
             Close();
@@ -160,11 +138,33 @@ namespace pi_Serasa_Projeto_Saude_lnwk
         }
 
     }
-
-
-
-
-
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
