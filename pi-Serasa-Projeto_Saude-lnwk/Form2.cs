@@ -37,6 +37,7 @@ namespace pi_Serasa_Projeto_Saude_lnwk
             RecepcaoAtendente atendente = new RecepcaoAtendente();
 
             atendente.Show();
+
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)

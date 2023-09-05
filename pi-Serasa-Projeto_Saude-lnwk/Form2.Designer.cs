@@ -143,6 +143,7 @@
             Controls.Add(painelMeio);
             Controls.Add(panel2);
             Controls.Add(panel1);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "Form2";
             Text = "Form2";
             Load += Form2_Load;

@@ -73,14 +73,17 @@ namespace pi_Serasa_Projeto_Saude_lnwk
                 listView1.Items.Add(a.idade.ToString());
                 listView1.Items.Add(a.sexo);
             }
-
+            
         }
 
         private void btnAceitar_Click(object sender, EventArgs e)
         {
-            Bancosangue bancosangue = new Bancosangue();
 
+            Bancosangue bancosangue = new Bancosangue();
             bancosangue.Show();
+
+            
+
 
         }
 
