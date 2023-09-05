@@ -32,10 +32,10 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblBemvindo = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtSenha = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.txtCpf = new System.Windows.Forms.TextBox();
+            this.btnEntrar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.painelMeio = new System.Windows.Forms.Panel();
@@ -74,13 +74,13 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "CPF:";
             // 
-            // textBox1
+            // txtSenha
             // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(166, 104);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(226, 33);
-            this.textBox1.TabIndex = 3;
+            this.txtSenha.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtSenha.Location = new System.Drawing.Point(166, 104);
+            this.txtSenha.Name = "txtSenha";
+            this.txtSenha.Size = new System.Drawing.Size(226, 33);
+            this.txtSenha.TabIndex = 3;
             // 
             // label3
             // 
@@ -92,23 +92,24 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Senha:";
             // 
-            // textBox2
+            // txtCpf
             // 
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.Location = new System.Drawing.Point(166, 40);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(226, 33);
-            this.textBox2.TabIndex = 5;
+            this.txtCpf.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtCpf.Location = new System.Drawing.Point(166, 40);
+            this.txtCpf.Name = "txtCpf";
+            this.txtCpf.Size = new System.Drawing.Size(226, 33);
+            this.txtCpf.TabIndex = 5;
             // 
-            // button1
+            // btnEntrar
             // 
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(219, 165);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(120, 40);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Entrar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnEntrar.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnEntrar.Location = new System.Drawing.Point(219, 165);
+            this.btnEntrar.Name = "btnEntrar";
+            this.btnEntrar.Size = new System.Drawing.Size(120, 40);
+            this.btnEntrar.TabIndex = 6;
+            this.btnEntrar.Text = "Entrar";
+            this.btnEntrar.UseVisualStyleBackColor = true;
+            this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click);
             // 
             // pictureBox1
             // 
@@ -133,11 +134,11 @@
             // painelMeio
             // 
             this.painelMeio.Controls.Add(this.pictureBox2);
-            this.painelMeio.Controls.Add(this.textBox1);
-            this.painelMeio.Controls.Add(this.button1);
+            this.painelMeio.Controls.Add(this.txtSenha);
+            this.painelMeio.Controls.Add(this.btnEntrar);
             this.painelMeio.Controls.Add(this.pictureBox1);
             this.painelMeio.Controls.Add(this.label3);
-            this.painelMeio.Controls.Add(this.textBox2);
+            this.painelMeio.Controls.Add(this.txtCpf);
             this.painelMeio.Controls.Add(this.label2);
             this.painelMeio.Location = new System.Drawing.Point(125, 160);
             this.painelMeio.Name = "painelMeio";
@@ -170,10 +171,10 @@
         private Panel panel1;
         private Label lblBemvindo;
         private Label label2;
-        private TextBox textBox1;
+        private TextBox txtSenha;
         private Label label3;
-        private TextBox textBox2;
-        private Button button1;
+        private TextBox txtCpf;
+        private Button btnEntrar;
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
         private Panel painelMeio;

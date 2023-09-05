@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -32,6 +33,14 @@ namespace pi_Serasa_Projeto_Saude_lnwk
         private void HealtHub_Load_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnEntrar_Click(object sender, EventArgs e)
+        {
+            string cpf=txtCpf.Text;
+            string senha=txtSenha.Text;
+
+            string conexaoString = "Server=cadastro;Database=seubanco;Uid=seunomeusuario;Pwd=suasenha;";
         }
     }
 }
