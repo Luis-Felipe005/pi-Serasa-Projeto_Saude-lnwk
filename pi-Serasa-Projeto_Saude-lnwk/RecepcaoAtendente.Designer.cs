@@ -123,6 +123,7 @@
             btnRecusar.TabIndex = 6;
             btnRecusar.Text = "RECUSAR";
             btnRecusar.UseVisualStyleBackColor = true;
+            btnRecusar.Click += btnRecusar_Click;
             // 
             // panel3
             // 
