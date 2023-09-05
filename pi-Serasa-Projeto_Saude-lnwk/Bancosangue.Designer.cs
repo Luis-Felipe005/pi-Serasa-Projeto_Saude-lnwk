@@ -31,8 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Bancosangue));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnDoarSangue = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -63,25 +63,26 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Serviço:Doação de sangue";
             // 
-            // button1
+            // btnDoarSangue
             // 
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(21, 17);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(177, 44);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Doar Sangue";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnDoarSangue.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnDoarSangue.Location = new System.Drawing.Point(21, 17);
+            this.btnDoarSangue.Name = "btnDoarSangue";
+            this.btnDoarSangue.Size = new System.Drawing.Size(177, 44);
+            this.btnDoarSangue.TabIndex = 1;
+            this.btnDoarSangue.Text = "Doar Sangue";
+            this.btnDoarSangue.UseVisualStyleBackColor = true;
+            this.btnDoarSangue.Click += new System.EventHandler(this.btnDoarSangue_Click);
             // 
-            // button2
+            // btnCancelar
             // 
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button2.Location = new System.Drawing.Point(56, 80);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(103, 35);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Cancelar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnCancelar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnCancelar.Location = new System.Drawing.Point(56, 80);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(103, 35);
+            this.btnCancelar.TabIndex = 2;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
             // 
             // pictureBox2
             // 
@@ -107,8 +108,8 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.button2);
+            this.panel2.Controls.Add(this.btnDoarSangue);
+            this.panel2.Controls.Add(this.btnCancelar);
             this.panel2.Location = new System.Drawing.Point(306, 154);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(212, 127);
@@ -152,8 +153,8 @@
 
         private Panel panel1;
         private Label label1;
-        private Button button1;
-        private Button button2;
+        private Button btnDoarSangue;
+        private Button btnCancelar;
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
         private Panel panel2;
