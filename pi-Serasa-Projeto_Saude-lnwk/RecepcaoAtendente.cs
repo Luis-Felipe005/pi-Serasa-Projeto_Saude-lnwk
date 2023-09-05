@@ -13,11 +13,11 @@ namespace pi_Serasa_Projeto_Saude_lnwk
 {
     public partial class RecepcaoAtendente : Form
     {
-       
+
         public RecepcaoAtendente()
         {
             InitializeComponent();
-            
+
 
 
         }
@@ -62,7 +62,19 @@ namespace pi_Serasa_Projeto_Saude_lnwk
 
         private void RecepcaoAtendente_Load_1(object sender, EventArgs e)
         {
-            
+            Atendente atendente = new Atendente();
+
+            atendente.buscaTodos();
+
+           
+
+        }
+
+        private void btnAceitar_Click(object sender, EventArgs e)
+        {
+            Bancosangue bancosangue = new Bancosangue();
+
+            bancosangue.Show();
 
         }
     }
