@@ -127,11 +127,40 @@ namespace pi_Serasa_Projeto_Saude_lnwk
 
         }
 
+        private void FecharTelasAnteriores()
+        {
+            Close();
+        }
+
         private void btnDoarSangue_Click(object sender, EventArgs e)
         {
 
+            
+            ProcessoConcluido processo = new ProcessoConcluido();
+
+            processo.Show();
+
+            // Configura um temporizador para fechar a tela após 3 segundos
+            System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
+            timer.Interval = 3000; // 3 segundos
+            timer.Tick += (s, ev) =>
+            {
+                timer.Stop(); // Para o temporizador
+                processo.Close(); // Fecha o formulário "ProcessoConcluido"
+                
+                FecharTelasAnteriores(); // Fecha as telas anteriores, se necessário
+
+                
+
+                
+            };
+
+            // Inicia o temporizador
+            timer.Start();
         }
+
     }
+
 
 
 
