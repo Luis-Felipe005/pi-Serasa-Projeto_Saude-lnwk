@@ -144,6 +144,7 @@
             Controls.Add(panel2);
             Controls.Add(pictureBox1);
             Controls.Add(panel1);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "RecepcaoAtendente";
             Text = "RecepcaoAtendente";
             Load += RecepcaoAtendente_Load_1;

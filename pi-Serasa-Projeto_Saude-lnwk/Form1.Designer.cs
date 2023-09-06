@@ -28,19 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
             label1 = new Label();
             panel1 = new Panel();
             SuspendLayout();
-            // 
-            // button1
-            // 
-            button1.Location = new Point(497, 190);
-            button1.Name = "button1";
-            button1.Size = new Size(123, 58);
-            button1.TabIndex = 0;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -65,7 +55,6 @@
             ClientSize = new Size(800, 450);
             Controls.Add(panel1);
             Controls.Add(label1);
-            Controls.Add(button1);
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
@@ -74,8 +63,6 @@
         }
 
         #endregion
-
-        private Button button1;
         private Label label1;
         private Panel panel1;
     }
