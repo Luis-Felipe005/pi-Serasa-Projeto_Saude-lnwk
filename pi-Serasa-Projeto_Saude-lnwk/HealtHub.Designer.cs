@@ -166,6 +166,11 @@
             ResumeLayout(false);
         }
 
+        private void btnEntrar_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
         #endregion
 
         private Panel panel1;
