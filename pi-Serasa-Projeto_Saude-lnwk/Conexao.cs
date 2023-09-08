@@ -16,7 +16,7 @@ namespace pi_Serasa_Projeto_Saude_lnwk
         */
 
         const string host = "localhost";
-        const string banco = "proetobanco";
+        const string banco = "projetobanco";
         const string usuario = "root";
         const string senha = "";
         //const string host = "10.60./45.28";

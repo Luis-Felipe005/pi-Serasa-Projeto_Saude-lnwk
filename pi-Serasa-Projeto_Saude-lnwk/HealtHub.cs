@@ -16,6 +16,8 @@ namespace pi_Serasa_Projeto_Saude_lnwk
         public HealtHub()
         {
             InitializeComponent();
+            txtCpf.Select();
+            txtSenha.Select();
         }
 
         private void HealtHub_Load(object sender, EventArgs e)
@@ -42,15 +44,102 @@ namespace pi_Serasa_Projeto_Saude_lnwk
 
         }
 
-         public void btnEntrar_Click(object sender, EventArgs e)
+        internal class Paciente
         {
-            string cpf = txtCpf.Text;
-            string senha = txtSenha.Text;
 
-            string conexaoString = "Server=cadastro;Database=seubanco;Uid=seunomeusuario;Pwd=suasenha;";
+            public int id;
+            public string nome;
+            public string CPF;
+            public string Senha;
 
-            
+
+
+            public Paciente()
+            {
+
+            }
+
+            public Paciente(int id, string nome, string cpf, string senha)
+            {
+                this.id = id;
+                this.nome = nome;
+                this.CPF = cpf;
+                this.Senha = senha;
+            }
+
+            public List<Paciente> buscaTodos()
+            {
+
+                string query = "SELECT * FROM pacientes;";
+
+                DataTable resultados = Conexao.executaQuery(query);
+                if (resultados == null)
+                    return null;
+
+                List<Paciente> pacientes = new List<Paciente>();
+                foreach (DataRow row in resultados.Rows)
+                {
+                    Paciente paciente = carregaDados(row);
+                    pacientes.Add(paciente);
+                }
+
+                return pacientes;
+
+            }
+
+            public List<Paciente> buscaTodosPorIdUsuario(int id)
+            {
+
+                string query = $"SELECT * FROM pacientes WHERE id = {id};";
+
+                DataTable resultados = Conexao.executaQuery(query);
+                if (resultados == null)
+                    return null;
+
+                List<Paciente> pacientes = new List<Paciente>();
+                foreach (DataRow row in resultados.Rows)
+                {
+                    Paciente paciente = carregaDados(row);
+                    pacientes.Add(paciente);
+                }
+
+                return pacientes;
+
+            }
+
+            public Paciente buscaPorId(int id)
+            {
+                string query = "SELECT * FROM pacientes WHERE id = " + id + " LIMIT 1;";
+
+                DataTable resultados = Conexao.executaQuery(query);
+                if (resultados.Rows.Count == 0)
+                    return null;
+
+                Paciente paciente = carregaDados(resultados.Rows[0]);
+                return paciente;
+
+            }
+
+            public void insere(Paciente paciente)
+            {
+                string query = $"INSERT INTO pacientes (id, nome, cpf,senha) VALUES ({paciente.id}, '{paciente.nome}', {paciente.CPF} {paciente.Senha});";
+                Conexao.executaQuery(query);
+            }
+
+
+            private Paciente carregaDados(DataRow row)
+            {
+                int id = int.Parse(row["id"].ToString());
+                string Nome = row["Nome"].ToString();
+                string CPF = row["CPF"].ToString();
+                string Senha = row["Senha"].ToString();
+
+                Paciente pacientes = new Paciente(id, Nome, CPF, Senha);
+                return pacientes;
+            }
+
 
         }
     }
 }
+
