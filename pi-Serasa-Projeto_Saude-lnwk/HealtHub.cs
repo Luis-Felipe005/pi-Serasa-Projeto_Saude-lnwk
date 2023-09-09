@@ -43,6 +43,33 @@ namespace pi_Serasa_Projeto_Saude_lnwk
             painelMeio.Location = new Point(ClientSize.Width / 2 - painelMeio.Size.Width / 2, ClientSize.Height / 2 - painelMeio.Size.Height / 2);
 
         }
+        private void btnEntrar_Click(object sender, EventArgs e)
+        {
+            string CPF = txtCpf.Text;
+            string Senha = txtSenha.Text;
+
+            Paciente paciente = new Paciente();
+            paciente = paciente.login(CPF, Senha);
+
+            if (paciente == null)
+            {
+
+                MessageBox.Show("CPF ou Senha incorreto");
+                return;
+
+            }
+
+
+
+
+            HealtHub healtHub = new HealtHub();
+            healtHub.TopLevel = false;
+
+            Form1.panel1.Controls.Clear();
+
+            Form1.panel1.Controls.Add(healtHub);
+            healtHub.Show();
+        }
 
         internal class Paciente
         {

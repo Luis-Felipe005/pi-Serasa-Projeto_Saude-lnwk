@@ -64,6 +64,6 @@
 
         #endregion
         private Label label1;
-        private Panel panel1;
+        public static Panel panel1;
     }
 }

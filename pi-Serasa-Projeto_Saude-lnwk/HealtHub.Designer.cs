@@ -166,11 +166,7 @@
             ResumeLayout(false);
         }
 
-        private void btnEntrar_Click(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
-
+       
         #endregion
 
         private Panel panel1;
@@ -183,5 +179,6 @@
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
         private Panel painelMeio;
+        
     }
 }
