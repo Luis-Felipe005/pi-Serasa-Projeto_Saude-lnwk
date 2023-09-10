@@ -81,6 +81,7 @@
             // 
             // painelMeio
             // 
+            painelMeio.BackColor = Color.Transparent;
             painelMeio.Controls.Add(btnCancelar);
             painelMeio.Controls.Add(btnConsulta);
             painelMeio.Controls.Add(btnExame);
@@ -158,7 +159,7 @@
         private Label lblOpcoes;
         private Panel panel1;
         private Panel panel2;
-        private Panel painelMeio;
+        public Panel painelMeio;
         private Button btnCancelar;
         private Button btnConsulta;
         private Button btnExame;

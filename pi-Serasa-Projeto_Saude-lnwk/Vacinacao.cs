@@ -21,7 +21,7 @@ namespace pi_Serasa_Projeto_Saude_lnwk
         {
             WindowState = FormWindowState.Maximized;
 
-            
+
 
 
             panel1.Location = new Point(0, 0);
@@ -30,11 +30,10 @@ namespace pi_Serasa_Projeto_Saude_lnwk
             pictureBox1.Size = new Size(ClientSize.Width, ClientSize.Height);
 
 
-            panel2.Location = new Point(ClientSize.Width / 2- panel2.Size.Width / 2 , ClientSize.Height / 2 - panel2.Size.Height / 2 );
+            panel2.Location = new Point(ClientSize.Width / 2 - panel2.Size.Width / 2, ClientSize.Height / 2 - panel2.Size.Height / 2);
 
 
             lblVacinacao.Location = new Point(ClientSize.Width / 2 - panel2.Size.Width / 2);
-            
 
 
 
@@ -42,6 +41,28 @@ namespace pi_Serasa_Projeto_Saude_lnwk
 
 
 
+
+        }
+
+        private void btnTomarVacina_Click(object sender, EventArgs e)
+        {
+
+            MessageBox.Show("Vacina agendada com sucesso!");
+
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            pictureBox2.Visible = false;
+            pictureBox1.Visible = false;
+            panel2.Visible = false;
+            WindowState = FormWindowState.Maximized;
+            panel1.Size = new Size(ClientSize.Width, ClientSize.Height); ;
+            panel1.Location = new Point(0, 0);
+            Form2 form2 = new Form2();
+            form2.TopLevel = false;
+            panel1.Controls.Add(form2);
+            form2.Show();
         }
     }
 }

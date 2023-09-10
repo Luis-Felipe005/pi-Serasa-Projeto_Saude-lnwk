@@ -15,7 +15,7 @@ namespace pi_Serasa_Projeto_Saude_lnwk
     {
 
 
-        
+
 
 
 
@@ -24,7 +24,7 @@ namespace pi_Serasa_Projeto_Saude_lnwk
         {
             InitializeComponent();
 
-            
+
         }
 
         private void Form2_Load(object sender, EventArgs e)
@@ -113,7 +113,7 @@ namespace pi_Serasa_Projeto_Saude_lnwk
         private void btnDoarSangue_Click(object sender, EventArgs e)
         {
 
-            
+
             ProcessoConcluido processo = new ProcessoConcluido();
 
             processo.Show();
@@ -125,18 +125,32 @@ namespace pi_Serasa_Projeto_Saude_lnwk
             {
                 timer.Stop(); // Para o temporizador
                 processo.Close(); // Fecha o formulário "ProcessoConcluido"
-                
-                FecharTelasAnteriores(); // Fecha as telas anteriores, se necessário
 
-                
+                //FecharTelasAnteriores(); // Fecha as telas anteriores, se necessário
 
-                
+
+
+
             };
 
             // Inicia o temporizador
             timer.Start();
         }
 
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            
+            pictureBox2.Visible = false;
+            pictureBox3.Visible = false;
+            panel2.Visible = false;
+            WindowState = FormWindowState.Maximized;
+            panel1.Size = new Size(ClientSize.Width, ClientSize.Height); ;
+            panel1.Location = new Point(0, 0);
+            HealtHub healtHub = new HealtHub();
+            healtHub.TopLevel = false;
+            panel1.Controls.Add(healtHub);
+            healtHub.Show();
+        }
     }
 }
 

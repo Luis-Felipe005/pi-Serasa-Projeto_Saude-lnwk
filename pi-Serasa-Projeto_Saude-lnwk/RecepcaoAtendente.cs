@@ -64,7 +64,7 @@ namespace pi_Serasa_Projeto_Saude_lnwk
         {
             Atendente atendente = new Atendente();
 
-            List<Atendente> atendentes = atendente.buscaTodos();
+            List<Atendente> atendentes = new List<Atendente>();
 
             foreach (Atendente a in atendentes)
             {

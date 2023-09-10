@@ -79,6 +79,7 @@
             button1.TabIndex = 2;
             button1.Text = "Exame de Colesterol";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
@@ -89,6 +90,7 @@
             button2.TabIndex = 3;
             button2.Text = "Cancelar";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // label1
             // 
@@ -118,6 +120,7 @@
             Controls.Add(panel2);
             Controls.Add(pictureBox1);
             Controls.Add(panel1);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "ColetaExame";
             Text = "Form2";
             Load += ColetaExame_Load;

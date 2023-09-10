@@ -51,6 +51,7 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(780, 85);
             panel1.TabIndex = 0;
+            panel1.Paint += panel1_Paint;
             // 
             // label1
             // 
@@ -88,6 +89,7 @@
             button2.TabIndex = 1;
             button2.Text = "Cancelar";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // button1
             // 
@@ -98,6 +100,7 @@
             button1.TabIndex = 0;
             button1.Text = "Realizar Consulta";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // pictureBox1
             // 
@@ -129,6 +132,7 @@
             Controls.Add(panel3);
             Controls.Add(panel2);
             Controls.Add(panel1);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "Consulta";
             Text = "Consulta";
             Load += Consulta_Load;

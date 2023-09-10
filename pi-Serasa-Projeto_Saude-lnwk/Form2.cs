@@ -34,18 +34,19 @@ namespace pi_Serasa_Projeto_Saude_lnwk
 
         //public void CarregaForms()
         //{
-            RecepcaoAtendente atendente = new RecepcaoAtendente();
+        RecepcaoAtendente atendente = new RecepcaoAtendente();
 
         //  atendente.Show();
 
 
 
-        
 
-       
+
+
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
+            painelMeio.Visible = false;
             WindowState = FormWindowState.Maximized;
             panel1.Size = new Size(ClientSize.Width, ClientSize.Height); ;
             panel1.Location = new Point(0, 0);
@@ -54,33 +55,46 @@ namespace pi_Serasa_Projeto_Saude_lnwk
             panel1.Controls.Add(healtHub);
             healtHub.Show();
 
-            
+
 
         }
 
         private void btnSangue_Click(object sender, EventArgs e)
         {
 
-            HealtHub.Close();
+            painelMeio.Visible = false;
+            Bancosangue bancosangue = new Bancosangue();
+            bancosangue.FormClosed += (s, args) =>
+            {
+                // Torna o painelMeio visível novamente quando o formulário Bancosangue for fechado
+                painelMeio.Visible = true;
+            };
             WindowState = FormWindowState.Maximized;
             panel1.Size = new Size(ClientSize.Width, ClientSize.Height); ;
             panel1.Location = new Point(0, 0);
-            Bancosangue bancosangue = new Bancosangue();
             bancosangue.TopLevel = false;
             panel1.Controls.Add(bancosangue);
             bancosangue.Show();
-
             
+
+
+
 
 
         }
 
         private void btnVacina_Click(object sender, EventArgs e)
         {
+            painelMeio.Visible = false;
             WindowState = FormWindowState.Maximized;
             panel1.Size = new Size(ClientSize.Width, ClientSize.Height); ;
             panel1.Location = new Point(0, 0);
             Vacinacao vacinacao = new Vacinacao();
+            vacinacao.FormClosed += (s, args) =>
+            {
+                // Torna o painelMeio visível novamente quando o formulário Bancosangue for fechado
+                painelMeio.Visible = true;
+            };
             vacinacao.TopLevel = false;
             panel1.Controls.Add(vacinacao);
             vacinacao.Show();
@@ -88,10 +102,16 @@ namespace pi_Serasa_Projeto_Saude_lnwk
 
         private void btnExame_Click(object sender, EventArgs e)
         {
+            painelMeio.Visible=false;
             WindowState = FormWindowState.Maximized;
             panel1.Size = new Size(ClientSize.Width, ClientSize.Height); ;
             panel1.Location = new Point(0, 0);
             ColetaExame coletaExame = new ColetaExame();
+            coletaExame.FormClosed += (s, args) =>
+            {
+                // Torna o painelMeio visível novamente quando o formulário Bancosangue for fechado
+                painelMeio.Visible = true;
+            };
             coletaExame.TopLevel = false;
             panel1.Controls.Add(coletaExame);
             coletaExame.Show();
@@ -99,10 +119,18 @@ namespace pi_Serasa_Projeto_Saude_lnwk
 
         private void btnConsulta_Click(object sender, EventArgs e)
         {
+            painelMeio.Visible = false;
+            panel2.Visible = false;
             WindowState = FormWindowState.Maximized;
             panel1.Size = new Size(ClientSize.Width, ClientSize.Height); ;
             panel1.Location = new Point(0, 0);
             Consulta consulta = new Consulta();
+            consulta.FormClosed += (s, args) =>
+            {
+                // Torna o painelMeio visível novamente quando o formulário Bancosangue for fechado
+                painelMeio.Visible = true;
+                
+            };
             consulta.TopLevel = false;
             panel1.Controls.Add(consulta);
             consulta.Show();

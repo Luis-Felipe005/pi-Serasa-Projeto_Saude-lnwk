@@ -29,5 +29,22 @@ namespace pi_Serasa_Projeto_Saude_lnwk
 
             pictureBox1.Dock = DockStyle.Bottom;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Exame coletado!");
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            panel2.Visible = false;
+            WindowState = FormWindowState.Maximized;
+            panel1.Size = new Size(ClientSize.Width, ClientSize.Height); ;
+            panel1.Location = new Point(0, 0);
+            Form2 form2 = new Form2();
+            form2.TopLevel = false;
+            panel1.Controls.Add(form2);
+            form2.Show();
+        }
     }
 }
