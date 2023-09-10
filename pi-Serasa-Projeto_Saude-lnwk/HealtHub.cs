@@ -49,7 +49,7 @@ namespace pi_Serasa_Projeto_Saude_lnwk
             string Senha = txtSenha.Text;
 
             Paciente paciente = new Paciente();
-            paciente = paciente.login(CPF, Senha);
+            //paciente = paciente.login(CPF, Senha);
 
             if (paciente == null)
             {

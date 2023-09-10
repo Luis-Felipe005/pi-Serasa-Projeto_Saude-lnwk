@@ -16,5 +16,18 @@ namespace pi_Serasa_Projeto_Saude_lnwk
         {
             InitializeComponent();
         }
+
+        private void ColetaExame_Load(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Maximized;
+
+            panel1.Size = new Size(ClientSize.Width, 100);
+
+            label2.Location = new Point(ClientSize.Width / 2 - label2.Size.Width / 2);
+
+            panel2.Location = new Point(ClientSize.Width / 2 - panel2.Size.Width / 2, ClientSize.Height / 2 - panel2.Size.Height / 2);
+
+            pictureBox1.Dock = DockStyle.Bottom;
+        }
     }
 }

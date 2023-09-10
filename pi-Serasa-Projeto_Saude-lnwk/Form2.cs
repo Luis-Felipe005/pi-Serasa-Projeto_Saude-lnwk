@@ -32,40 +32,80 @@ namespace pi_Serasa_Projeto_Saude_lnwk
 
         }
 
-        public void CarregaForms()
-        {
+        //public void CarregaForms()
+        //{
             RecepcaoAtendente atendente = new RecepcaoAtendente();
 
-            atendente.Show();
+        //  atendente.Show();
 
-        }
+
+
+        
+
+       
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            HealtHub healthhub = new HealtHub();
+            WindowState = FormWindowState.Maximized;
+            panel1.Size = new Size(ClientSize.Width, ClientSize.Height); ;
+            panel1.Location = new Point(0, 0);
+            HealtHub healtHub = new HealtHub();
+            healtHub.TopLevel = false;
+            panel1.Controls.Add(healtHub);
+            healtHub.Show();
 
-            healthhub.Show();
+            
 
         }
 
         private void btnSangue_Click(object sender, EventArgs e)
         {
-            CarregaForms();
+
+            HealtHub.Close();
+            WindowState = FormWindowState.Maximized;
+            panel1.Size = new Size(ClientSize.Width, ClientSize.Height); ;
+            panel1.Location = new Point(0, 0);
+            Bancosangue bancosangue = new Bancosangue();
+            bancosangue.TopLevel = false;
+            panel1.Controls.Add(bancosangue);
+            bancosangue.Show();
+
+            
+
+
         }
 
         private void btnVacina_Click(object sender, EventArgs e)
         {
-            CarregaForms();
+            WindowState = FormWindowState.Maximized;
+            panel1.Size = new Size(ClientSize.Width, ClientSize.Height); ;
+            panel1.Location = new Point(0, 0);
+            Vacinacao vacinacao = new Vacinacao();
+            vacinacao.TopLevel = false;
+            panel1.Controls.Add(vacinacao);
+            vacinacao.Show();
         }
 
         private void btnExame_Click(object sender, EventArgs e)
         {
-            CarregaForms();
+            WindowState = FormWindowState.Maximized;
+            panel1.Size = new Size(ClientSize.Width, ClientSize.Height); ;
+            panel1.Location = new Point(0, 0);
+            ColetaExame coletaExame = new ColetaExame();
+            coletaExame.TopLevel = false;
+            panel1.Controls.Add(coletaExame);
+            coletaExame.Show();
         }
 
         private void btnConsulta_Click(object sender, EventArgs e)
         {
-            CarregaForms();
+            WindowState = FormWindowState.Maximized;
+            panel1.Size = new Size(ClientSize.Width, ClientSize.Height); ;
+            panel1.Location = new Point(0, 0);
+            Consulta consulta = new Consulta();
+            consulta.TopLevel = false;
+            panel1.Controls.Add(consulta);
+            consulta.Show();
         }
     }
 }

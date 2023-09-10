@@ -79,6 +79,7 @@
             txtSenha.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             txtSenha.Location = new Point(166, 104);
             txtSenha.Name = "txtSenha";
+            txtSenha.PasswordChar = '*';
             txtSenha.Size = new Size(226, 33);
             txtSenha.TabIndex = 3;
             // 
@@ -166,7 +167,7 @@
             ResumeLayout(false);
         }
 
-       
+
         #endregion
 
         private Panel panel1;
@@ -179,6 +180,6 @@
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
         private Panel painelMeio;
-        
+
     }
 }
