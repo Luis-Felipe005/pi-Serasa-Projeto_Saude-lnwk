@@ -12,10 +12,10 @@ namespace pi_Serasa_Projeto_Saude_lnwk
             WindowState = FormWindowState.Maximized;
             panel1.Size = new Size(ClientSize.Width, ClientSize.Height); ;
             panel1.Location = new Point(0, 0);
-            Form2 form2 = new Form2();
-            form2.TopLevel = false;
-            panel1.Controls.Add(form2);
-            form2.Show();
+            HealtHub healtHub = new HealtHub();
+            healtHub.TopLevel = false;
+            panel1.Controls.Add(healtHub);
+            healtHub.Show();
 
 
 
