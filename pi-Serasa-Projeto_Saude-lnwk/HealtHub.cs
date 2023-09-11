@@ -41,7 +41,7 @@ namespace pi_Serasa_Projeto_Saude_lnwk
 
             painelMeio.Location = new Point(ClientSize.Width / 2 - painelMeio.Size.Width / 2, ClientSize.Height / 2 - painelMeio.Size.Height / 2);
 
-            var strConexao = "server=localhost;uid=root;database=projetobanco";
+            var strConexao = "server=localhost;uid=root;pwd=senac;database=cadastro";
             var conexao = new MySqlConnection(strConexao);
 
             conexao.Open();

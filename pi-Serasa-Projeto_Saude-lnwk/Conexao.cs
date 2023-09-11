@@ -14,15 +14,18 @@ namespace pi_Serasa_Projeto_Saude_lnwk
         /*
          * EXEMPLO DE CONEXÃO GENÉRICA QUE PODE SER INTEGRADA COM QUALQUER CLASSE
         */
+        //Casa
+        //const string host = "localhost";
+        //const string banco = "projetobanco";
+        //const string usuario = "root";
+        //const string senha = "";
 
+
+        //Senac
         const string host = "localhost";
-        const string banco = "projetobanco";
-        const string usuario = "root";
-        const string senha = "";
-        //const string host = "10.60./45.28";
-        //const string banco = "cadastro";
-        //const string usuario = "senac";
-        //const string senha = "senac";
+        const string banco = "cadastro";
+        const string usuario = "senac";
+        const string senha = "senac";
 
         public static MySqlConnection connection =
             new MySqlConnection($"Server={host};Database={banco};Uid={usuario};Pwd={senha};");
