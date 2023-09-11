@@ -75,7 +75,7 @@ namespace pi_Serasa_Projeto_Saude_lnwk
             bancosangue.TopLevel = false;
             panel1.Controls.Add(bancosangue);
             bancosangue.Show();
-            
+
 
 
 
@@ -102,7 +102,7 @@ namespace pi_Serasa_Projeto_Saude_lnwk
 
         private void btnExame_Click(object sender, EventArgs e)
         {
-            painelMeio.Visible=false;
+            painelMeio.Visible = false;
             WindowState = FormWindowState.Maximized;
             panel1.Size = new Size(ClientSize.Width, ClientSize.Height); ;
             panel1.Location = new Point(0, 0);
@@ -129,7 +129,7 @@ namespace pi_Serasa_Projeto_Saude_lnwk
             {
                 // Torna o painelMeio visível novamente quando o formulário Bancosangue for fechado
                 painelMeio.Visible = true;
-                
+
             };
             consulta.TopLevel = false;
             panel1.Controls.Add(consulta);

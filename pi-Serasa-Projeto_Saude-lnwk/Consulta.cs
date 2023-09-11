@@ -46,7 +46,9 @@ namespace pi_Serasa_Projeto_Saude_lnwk
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
             MessageBox.Show("Consulta agendada , aguarde!");
+
         }
 
         private void button2_Click(object sender, EventArgs e)

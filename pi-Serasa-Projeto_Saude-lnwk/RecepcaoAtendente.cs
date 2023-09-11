@@ -64,7 +64,7 @@ namespace pi_Serasa_Projeto_Saude_lnwk
         {
             Atendente atendente = new Atendente();
 
-            List<Atendente> atendentes = new List<Atendente>();
+            List<Atendente> atendentes = atendente.buscaTodos();
 
             foreach (Atendente a in atendentes)
             {
@@ -72,8 +72,8 @@ namespace pi_Serasa_Projeto_Saude_lnwk
                 listView1.Items.Add(a.cpf);
                 listView1.Items.Add(a.idade.ToString());
                 listView1.Items.Add(a.sexo);
-            }
 
+            }
         }
 
         private void btnAceitar_Click(object sender, EventArgs e)
