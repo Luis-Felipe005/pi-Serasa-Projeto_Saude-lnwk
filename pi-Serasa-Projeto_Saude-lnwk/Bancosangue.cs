@@ -111,9 +111,25 @@ namespace pi_Serasa_Projeto_Saude_lnwk
             
         }
 
-        private void btnDoarSangue_Click(object sender, EventArgs e)
-        {
+        
 
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            
+            pictureBox2.Visible = false;
+            pictureBox3.Visible = false;
+            panel2.Visible = false;
+            WindowState = FormWindowState.Maximized;
+            panel1.Size = new Size(ClientSize.Width, ClientSize.Height); ;
+            panel1.Location = new Point(0, 0);
+            Form2 form2 = new Form2();
+            form2.TopLevel = false;
+            panel1.Controls.Add(form2);
+            form2.Show();
+        }
+
+        private void btnDoarSangue_Click_1(object sender, EventArgs e)
+        {
 
             ProcessoConcluido processo = new ProcessoConcluido();
 
@@ -136,21 +152,6 @@ namespace pi_Serasa_Projeto_Saude_lnwk
 
             // Inicia o temporizador
             timer.Start();
-        }
-
-        private void btnCancelar_Click(object sender, EventArgs e)
-        {
-            
-            pictureBox2.Visible = false;
-            pictureBox3.Visible = false;
-            panel2.Visible = false;
-            WindowState = FormWindowState.Maximized;
-            panel1.Size = new Size(ClientSize.Width, ClientSize.Height); ;
-            panel1.Location = new Point(0, 0);
-            Form2 form2 = new Form2();
-            form2.TopLevel = false;
-            panel1.Controls.Add(form2);
-            form2.Show();
         }
     }
 }

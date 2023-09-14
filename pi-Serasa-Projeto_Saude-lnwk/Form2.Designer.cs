@@ -43,13 +43,13 @@
             this.panelEsquerdo.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // panelCima
             // 
             this.panelCima.BackColor = System.Drawing.Color.Navy;
             this.panelCima.Controls.Add(this.pictureBox1);
             this.panelCima.Controls.Add(this.labelCima);
             this.panelCima.Location = new System.Drawing.Point(0, 1);
-            this.panelCima.Name = "panel1";
+            this.panelCima.Name = "panelCima";
             this.panelCima.Size = new System.Drawing.Size(803, 100);
             this.panelCima.TabIndex = 0;
             // 
@@ -88,47 +88,57 @@
             // 
             // btnConsulta
             // 
+            this.btnConsulta.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnConsulta.ForeColor = System.Drawing.Color.White;
             this.btnConsulta.Location = new System.Drawing.Point(62, 280);
             this.btnConsulta.Name = "btnConsulta";
             this.btnConsulta.Size = new System.Drawing.Size(87, 23);
             this.btnConsulta.TabIndex = 0;
             this.btnConsulta.Text = "Consulta";
-            this.btnConsulta.UseVisualStyleBackColor = true;
+            this.btnConsulta.UseVisualStyleBackColor = false;
             // 
             // btnVacina
             // 
+            this.btnVacina.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnVacina.ForeColor = System.Drawing.Color.White;
             this.btnVacina.Location = new System.Drawing.Point(62, 199);
             this.btnVacina.Name = "btnVacina";
             this.btnVacina.Size = new System.Drawing.Size(87, 23);
             this.btnVacina.TabIndex = 0;
             this.btnVacina.Text = "Vacinação";
-            this.btnVacina.UseVisualStyleBackColor = true;
+            this.btnVacina.UseVisualStyleBackColor = false;
             // 
             // btnExame
             // 
+            this.btnExame.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnExame.ForeColor = System.Drawing.Color.White;
             this.btnExame.Location = new System.Drawing.Point(62, 135);
             this.btnExame.Name = "btnExame";
             this.btnExame.Size = new System.Drawing.Size(100, 23);
             this.btnExame.TabIndex = 0;
             this.btnExame.Text = "Coletar Exame";
-            this.btnExame.UseVisualStyleBackColor = true;
+            this.btnExame.UseVisualStyleBackColor = false;
             // 
             // btnSangue
             // 
+            this.btnSangue.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnSangue.ForeColor = System.Drawing.Color.White;
             this.btnSangue.Location = new System.Drawing.Point(62, 66);
             this.btnSangue.Name = "btnSangue";
             this.btnSangue.Size = new System.Drawing.Size(100, 23);
             this.btnSangue.TabIndex = 0;
             this.btnSangue.Text = "Doar Sangue";
-            this.btnSangue.UseVisualStyleBackColor = true;
+            this.btnSangue.UseVisualStyleBackColor = false;
+            this.btnSangue.Click += new System.EventHandler(this.btnSangue_Click_1);
             // 
             // panelFundo
             // 
             this.panelFundo.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.panelFundo.Location = new System.Drawing.Point(284, 164);
+            this.panelFundo.Location = new System.Drawing.Point(226, 128);
             this.panelFundo.Name = "panelFundo";
-            this.panelFundo.Size = new System.Drawing.Size(769, 487);
+            this.panelFundo.Size = new System.Drawing.Size(827, 523);
             this.panelFundo.TabIndex = 2;
+            this.panelFundo.Paint += new System.Windows.Forms.PaintEventHandler(this.panelFundo_Paint);
             // 
             // Form2
             // 
@@ -139,10 +149,9 @@
             this.Controls.Add(this.panelFundo);
             this.Controls.Add(this.panelEsquerdo);
             this.Controls.Add(this.panelCima);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form2";
             this.Text = "Form2";
-            this.Load += new System.EventHandler(this.Form2_Load_1);
+            this.Load += new System.EventHandler(this.Form2_Load);
             this.panelCima.ResumeLayout(false);
             this.panelCima.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
