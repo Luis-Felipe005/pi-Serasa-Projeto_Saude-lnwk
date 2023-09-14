@@ -28,141 +28,139 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btnVacina = new Button();
-            lblOpcoes = new Label();
-            panel1 = new Panel();
-            panel2 = new Panel();
-            painelMeio = new Panel();
-            btnCancelar = new Button();
-            btnConsulta = new Button();
-            btnExame = new Button();
-            btnSangue = new Button();
-            panel1.SuspendLayout();
-            painelMeio.SuspendLayout();
-            SuspendLayout();
-            // 
-            // btnVacina
-            // 
-            btnVacina.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btnVacina.Location = new Point(213, 10);
-            btnVacina.Name = "btnVacina";
-            btnVacina.Size = new Size(178, 39);
-            btnVacina.TabIndex = 2;
-            btnVacina.Text = "Vacinações";
-            btnVacina.UseVisualStyleBackColor = true;
-            btnVacina.Click += btnVacina_Click;
-            // 
-            // lblOpcoes
-            // 
-            lblOpcoes.AutoSize = true;
-            lblOpcoes.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            lblOpcoes.Location = new Point(317, 38);
-            lblOpcoes.Name = "lblOpcoes";
-            lblOpcoes.Size = new Size(210, 21);
-            lblOpcoes.TabIndex = 5;
-            lblOpcoes.Text = "VER OPÇÕES DE SERVIÇOS";
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
+            this.panelCima = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.labelCima = new System.Windows.Forms.Label();
+            this.panelEsquerdo = new System.Windows.Forms.Panel();
+            this.btnConsulta = new System.Windows.Forms.Button();
+            this.btnVacina = new System.Windows.Forms.Button();
+            this.btnExame = new System.Windows.Forms.Button();
+            this.btnSangue = new System.Windows.Forms.Button();
+            this.panelFundo = new System.Windows.Forms.Panel();
+            this.panelCima.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panelEsquerdo.SuspendLayout();
+            this.SuspendLayout();
             // 
             // panel1
             // 
-            panel1.BackColor = Color.FromArgb(139, 172, 255);
-            panel1.Controls.Add(lblOpcoes);
-            panel1.Location = new Point(-2, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(804, 100);
-            panel1.TabIndex = 6;
+            this.panelCima.BackColor = System.Drawing.Color.Navy;
+            this.panelCima.Controls.Add(this.pictureBox1);
+            this.panelCima.Controls.Add(this.labelCima);
+            this.panelCima.Location = new System.Drawing.Point(0, 1);
+            this.panelCima.Name = "panel1";
+            this.panelCima.Size = new System.Drawing.Size(803, 100);
+            this.panelCima.TabIndex = 0;
             // 
-            // panel2
+            // pictureBox1
             // 
-            panel2.BackColor = Color.FromArgb(139, 172, 255);
-            panel2.Location = new Point(-2, 356);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(804, 100);
-            panel2.TabIndex = 7;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(522, 26);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(144, 74);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
-            // painelMeio
+            // labelCima
             // 
-            painelMeio.BackColor = Color.Transparent;
-            painelMeio.Controls.Add(btnCancelar);
-            painelMeio.Controls.Add(btnConsulta);
-            painelMeio.Controls.Add(btnExame);
-            painelMeio.Controls.Add(btnSangue);
-            painelMeio.Controls.Add(btnVacina);
-            painelMeio.Location = new Point(188, 96);
-            painelMeio.Name = "painelMeio";
-            painelMeio.Size = new Size(400, 265);
-            painelMeio.TabIndex = 8;
+            this.labelCima.AutoSize = true;
+            this.labelCima.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelCima.ForeColor = System.Drawing.Color.White;
+            this.labelCima.Location = new System.Drawing.Point(29, 21);
+            this.labelCima.Name = "labelCima";
+            this.labelCima.Size = new System.Drawing.Size(322, 40);
+            this.labelCima.TabIndex = 0;
+            this.labelCima.Text = "Ver Opções de Serviço";
             // 
-            // btnCancelar
+            // panelEsquerdo
             // 
-            btnCancelar.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btnCancelar.Location = new Point(114, 223);
-            btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(178, 39);
-            btnCancelar.TabIndex = 6;
-            btnCancelar.Text = "Cancelar";
-            btnCancelar.UseVisualStyleBackColor = true;
-            btnCancelar.Click += btnCancelar_Click;
+            this.panelEsquerdo.BackColor = System.Drawing.Color.Navy;
+            this.panelEsquerdo.Controls.Add(this.btnConsulta);
+            this.panelEsquerdo.Controls.Add(this.btnVacina);
+            this.panelEsquerdo.Controls.Add(this.btnExame);
+            this.panelEsquerdo.Controls.Add(this.btnSangue);
+            this.panelEsquerdo.Location = new System.Drawing.Point(0, 98);
+            this.panelEsquerdo.Name = "panelEsquerdo";
+            this.panelEsquerdo.Size = new System.Drawing.Size(200, 352);
+            this.panelEsquerdo.TabIndex = 1;
             // 
             // btnConsulta
             // 
-            btnConsulta.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btnConsulta.Location = new Point(213, 157);
-            btnConsulta.Name = "btnConsulta";
-            btnConsulta.Size = new Size(178, 39);
-            btnConsulta.TabIndex = 5;
-            btnConsulta.Text = "Consultas";
-            btnConsulta.UseVisualStyleBackColor = true;
-            btnConsulta.Click += btnConsulta_Click;
+            this.btnConsulta.Location = new System.Drawing.Point(62, 280);
+            this.btnConsulta.Name = "btnConsulta";
+            this.btnConsulta.Size = new System.Drawing.Size(87, 23);
+            this.btnConsulta.TabIndex = 0;
+            this.btnConsulta.Text = "Consulta";
+            this.btnConsulta.UseVisualStyleBackColor = true;
+            // 
+            // btnVacina
+            // 
+            this.btnVacina.Location = new System.Drawing.Point(62, 199);
+            this.btnVacina.Name = "btnVacina";
+            this.btnVacina.Size = new System.Drawing.Size(87, 23);
+            this.btnVacina.TabIndex = 0;
+            this.btnVacina.Text = "Vacinação";
+            this.btnVacina.UseVisualStyleBackColor = true;
             // 
             // btnExame
             // 
-            btnExame.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btnExame.Location = new Point(14, 157);
-            btnExame.Name = "btnExame";
-            btnExame.Size = new Size(178, 39);
-            btnExame.TabIndex = 4;
-            btnExame.Text = "Coleta De Exame";
-            btnExame.UseVisualStyleBackColor = true;
-            btnExame.Click += btnExame_Click;
+            this.btnExame.Location = new System.Drawing.Point(62, 135);
+            this.btnExame.Name = "btnExame";
+            this.btnExame.Size = new System.Drawing.Size(100, 23);
+            this.btnExame.TabIndex = 0;
+            this.btnExame.Text = "Coletar Exame";
+            this.btnExame.UseVisualStyleBackColor = true;
             // 
             // btnSangue
             // 
-            btnSangue.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btnSangue.Location = new Point(14, 10);
-            btnSangue.Name = "btnSangue";
-            btnSangue.Size = new Size(178, 39);
-            btnSangue.TabIndex = 3;
-            btnSangue.Text = "Doação De Sangue";
-            btnSangue.UseVisualStyleBackColor = true;
-            btnSangue.Click += btnSangue_Click;
+            this.btnSangue.Location = new System.Drawing.Point(62, 66);
+            this.btnSangue.Name = "btnSangue";
+            this.btnSangue.Size = new System.Drawing.Size(100, 23);
+            this.btnSangue.TabIndex = 0;
+            this.btnSangue.Text = "Doar Sangue";
+            this.btnSangue.UseVisualStyleBackColor = true;
+            // 
+            // panelFundo
+            // 
+            this.panelFundo.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.panelFundo.Location = new System.Drawing.Point(284, 164);
+            this.panelFundo.Name = "panelFundo";
+            this.panelFundo.Size = new System.Drawing.Size(769, 487);
+            this.panelFundo.TabIndex = 2;
             // 
             // Form2
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(painelMeio);
-            Controls.Add(panel2);
-            Controls.Add(panel1);
-            FormBorderStyle = FormBorderStyle.None;
-            Name = "Form2";
-            Text = "Form2";
-            Load += Form2_Load;
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            painelMeio.ResumeLayout(false);
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DodgerBlue;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.panelFundo);
+            this.Controls.Add(this.panelEsquerdo);
+            this.Controls.Add(this.panelCima);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "Form2";
+            this.Text = "Form2";
+            this.Load += new System.EventHandler(this.Form2_Load_1);
+            this.panelCima.ResumeLayout(false);
+            this.panelCima.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panelEsquerdo.ResumeLayout(false);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
-        private Button btnVacina;
-        private Label lblOpcoes;
-        private Panel panel1;
-        private Panel panel2;
-        public Panel painelMeio;
-        private Button btnCancelar;
+
+        private Panel panelCima;
+        private Label labelCima;
+        private Panel panelEsquerdo;
         private Button btnConsulta;
+        private Button btnVacina;
         private Button btnExame;
         private Button btnSangue;
+        private Panel panelFundo;
+        private PictureBox pictureBox1;
     }
 }

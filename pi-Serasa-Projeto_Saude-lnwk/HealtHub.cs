@@ -35,7 +35,7 @@ namespace pi_Serasa_Projeto_Saude_lnwk
         {
             WindowState = FormWindowState.Maximized;
 
-            panel1.Size = new Size(ClientSize.Width, 100);
+            painelMeio.Size = new Size(ClientSize.Width, 100);
 
             lblBemvindo.Location = new Point(ClientSize.Width / 2 - lblBemvindo.Size.Width / 2);
 

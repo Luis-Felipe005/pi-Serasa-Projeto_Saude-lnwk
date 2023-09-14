@@ -21,22 +21,50 @@ namespace pi_Serasa_Projeto_Saude_lnwk
         {
             WindowState = FormWindowState.Maximized;
 
-            panel1.Size = new Size(ClientSize.Width, 100);
 
-            panel2.Width = Width;
-            panel2.Location = new System.Drawing.Point(0, Height - panel2.Height);
+            panelFundo.Size = new Size(ClientSize.Width + 950, ClientSize.Height + 500);
+            panelFundo.Location = new Point(ClientSize.Width - 615, ClientSize.Height - 254);
 
-            painelMeio.Location = new Point(ClientSize.Width / 2 - painelMeio.Size.Width / 2, ClientSize.Height / 2 - painelMeio.Size.Height / 2);
 
-            lblOpcoes.Location = new Point(ClientSize.Width / 2 - lblOpcoes.Size.Width / 2);
+            WindowState = FormWindowState.Maximized;
+            panelCima.Size = new Size(ClientSize.Width, 200);
+            panelEsquerdo.Size = new Size(200, ClientSize.Height);
+
+            // panelFundo.Location = new Point(ClientSize.Width / 2 - panelFundo.Size.Width / 2 + 100 , ClientSize.Height / 2 - panelFundo.Size.Height / 2 + 100);
+
+
+            pictureBox1.Size = new Size(150, 150); // Defina o tamanho desejado para a PictureBox
+
+            int deslocamentoHorizontal = 100; // Ajuste o deslocamento horizontal
+            int deslocamentoVertical = 100;   // Ajuste o deslocamento vertical
+
+            // Calcula a posição do painelMeio
+            int xPainel = ClientSize.Width / 2 - panelFundo.Size.Width / 2;
+            int yPainel = ClientSize.Height / 2 - panelFundo.Size.Height / 2;
+
+            // Calcula a posição da PictureBox abaixo do painelMeio
+            int xPictureBox = ClientSize.Width / 2 - pictureBox1.Size.Width / 2 + deslocamentoHorizontal;
+            int yPictureBox = yPainel + panelFundo.Size.Height + deslocamentoVertical;
+
+            pictureBox1.Location = new Point(xPictureBox, yPictureBox);
+
+
+
+            this.Controls.Add(pictureBox1); // Adiciona a PictureBox ao formulário
+
+
 
         }
 
-        //public void CarregaForms()
-        //{
-        RecepcaoAtendente atendente = new RecepcaoAtendente();
-
-        //  atendente.Show();
+        public void carregaTela(Form form)
+        {
+            form.TopLevel = false;
+            panelFundo.Controls.Clear();
+            panelFundo.Controls.Add(form);
+            // form.Location = new Point(panelFundo.Width,panelFundo.Height);
+            form.Size = new Size(panelFundo.Width, panelFundo.Width);
+            form.Show();
+        }
 
 
 
@@ -45,14 +73,14 @@ namespace pi_Serasa_Projeto_Saude_lnwk
 
 
         private void btnCancelar_Click(object sender, EventArgs e)
-        {
+        
             painelMeio.Visible = false;
             WindowState = FormWindowState.Maximized;
-            panel1.Size = new Size(ClientSize.Width, ClientSize.Height); ;
-            panel1.Location = new Point(0, 0);
+            panelCima.Size = new Size(ClientSize.Width, ClientSize.Height); ;
+            panelCima.Location = new Point(0, 0);
             HealtHub healtHub = new HealtHub();
             healtHub.TopLevel = false;
-            panel1.Controls.Add(healtHub);
+            panelCima.Controls.Add(healtHub);
             healtHub.Show();
 
 
@@ -70,10 +98,10 @@ namespace pi_Serasa_Projeto_Saude_lnwk
                 painelMeio.Visible = true;
             };
             WindowState = FormWindowState.Maximized;
-            panel1.Size = new Size(ClientSize.Width, ClientSize.Height); ;
-            panel1.Location = new Point(0, 0);
+            panelCima.Size = new Size(ClientSize.Width, ClientSize.Height); ;
+            panelCima.Location = new Point(0, 0);
             bancosangue.TopLevel = false;
-            panel1.Controls.Add(bancosangue);
+            panelCima.Controls.Add(bancosangue);
             bancosangue.Show();
 
 
@@ -87,8 +115,8 @@ namespace pi_Serasa_Projeto_Saude_lnwk
         {
             painelMeio.Visible = false;
             WindowState = FormWindowState.Maximized;
-            panel1.Size = new Size(ClientSize.Width, ClientSize.Height); ;
-            panel1.Location = new Point(0, 0);
+            panelCima.Size = new Size(ClientSize.Width, ClientSize.Height); ;
+            panelCima.Location = new Point(0, 0);
             Vacinacao vacinacao = new Vacinacao();
             vacinacao.FormClosed += (s, args) =>
             {
@@ -96,7 +124,7 @@ namespace pi_Serasa_Projeto_Saude_lnwk
                 painelMeio.Visible = true;
             };
             vacinacao.TopLevel = false;
-            panel1.Controls.Add(vacinacao);
+            panelCima.Controls.Add(vacinacao);
             vacinacao.Show();
         }
 
@@ -104,8 +132,8 @@ namespace pi_Serasa_Projeto_Saude_lnwk
         {
             painelMeio.Visible = false;
             WindowState = FormWindowState.Maximized;
-            panel1.Size = new Size(ClientSize.Width, ClientSize.Height); ;
-            panel1.Location = new Point(0, 0);
+            panelCima.Size = new Size(ClientSize.Width, ClientSize.Height); ;
+            panelCima.Location = new Point(0, 0);
             ColetaExame coletaExame = new ColetaExame();
             coletaExame.FormClosed += (s, args) =>
             {
@@ -113,7 +141,7 @@ namespace pi_Serasa_Projeto_Saude_lnwk
                 painelMeio.Visible = true;
             };
             coletaExame.TopLevel = false;
-            panel1.Controls.Add(coletaExame);
+            panelCima.Controls.Add(coletaExame);
             coletaExame.Show();
         }
 
@@ -122,8 +150,8 @@ namespace pi_Serasa_Projeto_Saude_lnwk
             painelMeio.Visible = false;
             panel2.Visible = false;
             WindowState = FormWindowState.Maximized;
-            panel1.Size = new Size(ClientSize.Width, ClientSize.Height); ;
-            panel1.Location = new Point(0, 0);
+            panelCima.Size = new Size(ClientSize.Width, ClientSize.Height); ;
+            panelCima.Location = new Point(0, 0);
             Consulta consulta = new Consulta();
             consulta.FormClosed += (s, args) =>
             {
@@ -132,8 +160,13 @@ namespace pi_Serasa_Projeto_Saude_lnwk
 
             };
             consulta.TopLevel = false;
-            panel1.Controls.Add(consulta);
+            panelCima.Controls.Add(consulta);
             consulta.Show();
+        }
+
+        private void Form2_Load_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
