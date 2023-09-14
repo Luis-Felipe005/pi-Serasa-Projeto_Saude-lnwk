@@ -28,144 +28,112 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RecepcaoAtendente));
-            lblAtendente = new Label();
-            btnAceitar = new Button();
-            pictureBox1 = new PictureBox();
-            panel1 = new Panel();
-            label2 = new Label();
-            listView1 = new ListView();
-            panel2 = new Panel();
-            btnRecusar = new Button();
-            panel3 = new Panel();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            panel1.SuspendLayout();
-            panel2.SuspendLayout();
-            panel3.SuspendLayout();
-            SuspendLayout();
-            // 
-            // lblAtendente
-            // 
-            lblAtendente.AutoSize = true;
-            lblAtendente.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lblAtendente.ForeColor = SystemColors.ControlLightLight;
-            lblAtendente.Location = new Point(209, 0);
-            lblAtendente.Name = "lblAtendente";
-            lblAtendente.Size = new Size(360, 37);
-            lblAtendente.TabIndex = 0;
-            lblAtendente.Text = "RECEPÇÃO DO ATENDENTE";
-            // 
-            // btnAceitar
-            // 
-            btnAceitar.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btnAceitar.Location = new Point(276, 0);
-            btnAceitar.Name = "btnAceitar";
-            btnAceitar.Size = new Size(121, 66);
-            btnAceitar.TabIndex = 1;
-            btnAceitar.Text = "ACEITAR";
-            btnAceitar.UseVisualStyleBackColor = true;
-            btnAceitar.Click += btnAceitar_Click;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(509, 66);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(303, 225);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 3;
-            pictureBox1.TabStop = false;
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.SuspendLayout();
             // 
             // panel1
             // 
-            panel1.Controls.Add(label2);
-            panel1.Controls.Add(listView1);
-            panel1.Location = new Point(12, 66);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(296, 247);
-            panel1.TabIndex = 0;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(173)))));
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Location = new System.Drawing.Point(2, 2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(797, 89);
+            this.panel1.TabIndex = 0;
             // 
-            // label2
+            // label1
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(35, 15);
-            label2.Name = "label2";
-            label2.Size = new Size(234, 25);
-            label2.TabIndex = 8;
-            label2.Text = "Informações Do Paciente";
-            // 
-            // listView1
-            // 
-            listView1.Location = new Point(0, 61);
-            listView1.Name = "listView1";
-            listView1.Size = new Size(296, 183);
-            listView1.TabIndex = 7;
-            listView1.UseCompatibleStateImageBehavior = false;
-            listView1.View = View.List;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(240, 30);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(281, 32);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "RECEPÇÃO ATENDENTE";
             // 
             // panel2
             // 
-            panel2.BackColor = Color.Gray;
-            panel2.Controls.Add(btnRecusar);
-            panel2.Controls.Add(btnAceitar);
-            panel2.Location = new Point(0, 319);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(824, 55);
-            panel2.TabIndex = 4;
+            this.panel2.Controls.Add(this.listView1);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Location = new System.Drawing.Point(12, 126);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(322, 312);
+            this.panel2.TabIndex = 1;
             // 
-            // btnRecusar
+            // label2
             // 
-            btnRecusar.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btnRecusar.Location = new Point(417, 0);
-            btnRecusar.Name = "btnRecusar";
-            btnRecusar.Size = new Size(121, 66);
-            btnRecusar.TabIndex = 6;
-            btnRecusar.Text = "RECUSAR";
-            btnRecusar.UseVisualStyleBackColor = true;
-            btnRecusar.Click += btnRecusar_Click;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(48, 18);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(216, 20);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "INFORMAÇÕES DO PACIENTE";
             // 
-            // panel3
+            // listView1
             // 
-            panel3.BackColor = Color.Black;
-            panel3.Controls.Add(lblAtendente);
-            panel3.Location = new Point(0, 6);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(824, 40);
-            panel3.TabIndex = 5;
+            this.listView1.Location = new System.Drawing.Point(0, 53);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(322, 259);
+            this.listView1.TabIndex = 1;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button2.Location = new System.Drawing.Point(540, 374);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(121, 64);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "RECUSAR";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button1.Location = new System.Drawing.Point(390, 374);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(121, 64);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "ACEITAR";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // RecepcaoAtendente
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.White;
-            ClientSize = new Size(837, 394);
-            Controls.Add(panel3);
-            Controls.Add(panel2);
-            Controls.Add(pictureBox1);
-            Controls.Add(panel1);
-            FormBorderStyle = FormBorderStyle.None;
-            Name = "RecepcaoAtendente";
-            Text = "RecepcaoAtendente";
-            Load += RecepcaoAtendente_Load_1;
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            panel2.ResumeLayout(false);
-            panel3.ResumeLayout(false);
-            panel3.PerformLayout();
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(137)))), ((int)(((byte)(245)))));
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
+            this.Name = "RecepcaoAtendente";
+            this.Text = "RecepcaoAtendente";
+            this.Load += new System.EventHandler(this.RecepcaoAtendente_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
-        private Label lblAtendente;
-        private Button btnAceitar;
-        private PictureBox pictureBox1;
+
         private Panel panel1;
+        private Label label1;
+        private Panel panel2;
         private ListView listView1;
         private Label label2;
-        private Panel panel2;
-        private Panel panel3;
-        private Button btnRecusar;
+        private Button button2;
+        private Button button1;
     }
 }

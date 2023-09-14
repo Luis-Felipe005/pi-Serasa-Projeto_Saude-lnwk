@@ -73,7 +73,7 @@ namespace pi_Serasa_Projeto_Saude_lnwk
 
 
         private void btnCancelar_Click(object sender, EventArgs e)
-        
+        {  
             painelMeio.Visible = false;
             WindowState = FormWindowState.Maximized;
             panelCima.Size = new Size(ClientSize.Width, ClientSize.Height); ;
