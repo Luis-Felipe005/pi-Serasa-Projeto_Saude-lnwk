@@ -66,6 +66,9 @@ namespace pi_Serasa_Projeto_Saude_lnwk
         {
 
 
+
+
+
             WindowState = FormWindowState.Maximized;
 
 
@@ -152,6 +155,16 @@ namespace pi_Serasa_Projeto_Saude_lnwk
 
             // Inicia o temporizador
             timer.Start();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Bancosangue_Load_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

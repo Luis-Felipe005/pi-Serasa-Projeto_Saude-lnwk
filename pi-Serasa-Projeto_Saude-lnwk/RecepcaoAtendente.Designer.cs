@@ -31,8 +31,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
             this.listView1 = new System.Windows.Forms.ListView();
+            this.label2 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
@@ -67,6 +67,16 @@
             this.panel2.Size = new System.Drawing.Size(322, 312);
             this.panel2.TabIndex = 1;
             // 
+            // listView1
+            // 
+            this.listView1.Location = new System.Drawing.Point(0, 53);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(322, 259);
+            this.listView1.TabIndex = 1;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.List;
+            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -77,14 +87,6 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "INFORMAÇÕES DO PACIENTE";
             // 
-            // listView1
-            // 
-            this.listView1.Location = new System.Drawing.Point(0, 53);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(322, 259);
-            this.listView1.TabIndex = 1;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            // 
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -94,6 +96,7 @@
             this.button2.TabIndex = 3;
             this.button2.Text = "RECUSAR";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 

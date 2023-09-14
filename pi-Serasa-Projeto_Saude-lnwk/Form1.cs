@@ -30,6 +30,9 @@ namespace pi_Serasa_Projeto_Saude_lnwk
             recepcao.Show();
         }
 
+        private void Form1_Load_1(object sender, EventArgs e)
+        {
 
+        }
     }
 }
