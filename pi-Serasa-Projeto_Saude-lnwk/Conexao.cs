@@ -22,10 +22,10 @@ namespace pi_Serasa_Projeto_Saude_lnwk
 
 
         //Senac
-        const string host = "localhost";
-        const string banco = "cadastro";
-        const string usuario = "senac";
-        const string senha = "senac";
+        const string host = "srv793.hstgr.io";
+        const string banco = "u647084545_serasa_lnw";
+        const string usuario = "u647084545_serasa_lnw";
+        const string senha = "Serasa2023";
 
         public static MySqlConnection connection =
             new MySqlConnection($"Server={host};Database={banco};Uid={usuario};Pwd={senha};");
