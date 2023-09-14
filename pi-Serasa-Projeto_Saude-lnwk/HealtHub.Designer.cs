@@ -28,33 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblBemvindo = new System.Windows.Forms.Label();
-            this.txtCpf = new System.Windows.Forms.TextBox();
-            this.txtSenha = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.painelMeio = new System.Windows.Forms.Panel();
+            this.txtSenha = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtCpf = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.lblBemvindo = new System.Windows.Forms.Label();
             this.painelMeio.SuspendLayout();
             this.SuspendLayout();
             // 
-            // lblBemvindo
+            // painelMeio
             // 
-            this.lblBemvindo.AutoSize = true;
-            this.lblBemvindo.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblBemvindo.ForeColor = System.Drawing.Color.White;
-            this.lblBemvindo.Location = new System.Drawing.Point(235, 83);
-            this.lblBemvindo.Name = "lblBemvindo";
-            this.lblBemvindo.Size = new System.Drawing.Size(832, 86);
-            this.lblBemvindo.TabIndex = 0;
-            this.lblBemvindo.Text = "Bem-Vindo ao Health Hub";
-            // 
-            // txtCpf
-            // 
-            this.txtCpf.Location = new System.Drawing.Point(66, 37);
-            this.txtCpf.Name = "txtCpf";
-            this.txtCpf.Size = new System.Drawing.Size(256, 23);
-            this.txtCpf.TabIndex = 1;
+            this.painelMeio.Controls.Add(this.button1);
+            this.painelMeio.Controls.Add(this.txtCpf);
+            this.painelMeio.Controls.Add(this.label2);
+            this.painelMeio.Controls.Add(this.label3);
+            this.painelMeio.Controls.Add(this.txtSenha);
+            this.painelMeio.Location = new System.Drawing.Point(310, 169);
+            this.painelMeio.Name = "painelMeio";
+            this.painelMeio.Size = new System.Drawing.Size(364, 175);
+            this.painelMeio.TabIndex = 5;
             // 
             // txtSenha
             // 
@@ -62,17 +56,6 @@
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(256, 23);
             this.txtSenha.TabIndex = 2;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(18, 37);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(48, 25);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "CPF:";
             // 
             // label3
             // 
@@ -85,17 +68,23 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Senha:";
             // 
-            // painelMeio
+            // label2
             // 
-            this.painelMeio.Controls.Add(this.button1);
-            this.painelMeio.Controls.Add(this.txtCpf);
-            this.painelMeio.Controls.Add(this.label2);
-            this.painelMeio.Controls.Add(this.label3);
-            this.painelMeio.Controls.Add(this.txtSenha);
-            this.painelMeio.Location = new System.Drawing.Point(225, 195);
-            this.painelMeio.Name = "painelMeio";
-            this.painelMeio.Size = new System.Drawing.Size(364, 175);
-            this.painelMeio.TabIndex = 5;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(18, 37);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(48, 25);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "CPF:";
+            // 
+            // txtCpf
+            // 
+            this.txtCpf.Location = new System.Drawing.Point(66, 37);
+            this.txtCpf.Name = "txtCpf";
+            this.txtCpf.Size = new System.Drawing.Size(256, 23);
+            this.txtCpf.TabIndex = 1;
             // 
             // button1
             // 
@@ -107,14 +96,26 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.btnEntrar_Click);
             // 
+            // lblBemvindo
+            // 
+            this.lblBemvindo.AutoSize = true;
+            this.lblBemvindo.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblBemvindo.ForeColor = System.Drawing.Color.White;
+            this.lblBemvindo.Location = new System.Drawing.Point(80, 26);
+            this.lblBemvindo.Name = "lblBemvindo";
+            this.lblBemvindo.Size = new System.Drawing.Size(832, 86);
+            this.lblBemvindo.TabIndex = 0;
+            this.lblBemvindo.Text = "Bem-Vindo ao Health Hub";
+            // 
             // HealtHub
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(51)))), ((int)(((byte)(90)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.painelMeio);
+            this.ClientSize = new System.Drawing.Size(978, 541);
             this.Controls.Add(this.lblBemvindo);
+            this.Controls.Add(this.painelMeio);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "HealtHub";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.HealtHub_Load);
@@ -127,12 +128,12 @@
 
         #endregion
 
-        private Label lblBemvindo;
-        private TextBox txtCpf;
-        private TextBox txtSenha;
-        private Label label2;
-        private Label label3;
         private Panel painelMeio;
         private Button button1;
+        private TextBox txtCpf;
+        private Label label2;
+        private Label label3;
+        private TextBox txtSenha;
+        private Label lblBemvindo;
     }
 }

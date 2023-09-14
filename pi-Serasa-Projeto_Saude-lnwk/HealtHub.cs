@@ -35,11 +35,11 @@ namespace pi_Serasa_Projeto_Saude_lnwk
         {
             WindowState = FormWindowState.Maximized;
 
-            painelMeio.Size = new Size(ClientSize.Width, 100);
 
             lblBemvindo.Location = new Point(ClientSize.Width / 2 - lblBemvindo.Size.Width / 2);
+           // panelCentral.Size = new Size(ClientSize.Width-400, ClientSize.Height-500);
 
-            painelMeio.Location = new Point(ClientSize.Width / 2 - painelMeio.Size.Width / 2, ClientSize.Height / 2 - painelMeio.Size.Height / 2);
+           // painelMeio.Location = new Point(ClientSize.Width / 2 - panelCentral.Size.Width / 2, ClientSize.Height / 2+50 - panelCentral.Size.Height / 2+50);
 
             var strConexao = "server=localhost;uid=root;pwd=senac;database=cadastro";
             var conexao = new MySqlConnection(strConexao);

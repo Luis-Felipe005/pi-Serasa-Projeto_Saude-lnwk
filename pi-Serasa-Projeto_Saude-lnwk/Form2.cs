@@ -21,19 +21,22 @@ namespace pi_Serasa_Projeto_Saude_lnwk
         {
             WindowState = FormWindowState.Maximized;
 
+          //  carregaTela(new botoesMeio());
 
-            panelFundo.Size = new Size(ClientSize.Width - 200, ClientSize.Height -200);
-            panelFundo.Location = new Point(ClientSize.Width - 1710, ClientSize.Height - 810);
+            panelFundo.Size = new Size(ClientSize.Width - 130, ClientSize.Height -130);
+            panelFundo.Location = new Point(ClientSize.Width - 1728, ClientSize.Height - 858);
 
+            labelCima.Location = new Point(ClientSize.Width - 1150, ClientSize.Height - 990);
+           
 
-            
-            panelCima.Size = new Size(ClientSize.Width, 200);
-            panelEsquerdo.Size = new Size(200, ClientSize.Height);
+            panelEsquerdo.Size = new Size(panelEsquerdo.Width, ClientSize.Height);
+            panelCima.Size = new Size(ClientSize.Width, panelCima.Height);
+         
 
            
 
 
-            this.Controls.Add(pictureBox1); // Adiciona a PictureBox ao formulário
+            //this.Controls.Add(pictureBox1); // Adiciona a PictureBox ao formulário
 
 
 
@@ -44,7 +47,7 @@ namespace pi_Serasa_Projeto_Saude_lnwk
             form.TopLevel = false;
             panelFundo.Controls.Clear();
             panelFundo.Controls.Add(form);
-            // form.Location = new Point(panelFundo.Width,panelFundo.Height);
+           
             form.Size = new Size(panelFundo.Width, panelFundo.Width);
             form.Show();
         }
@@ -62,10 +65,7 @@ namespace pi_Serasa_Projeto_Saude_lnwk
 
         }
 
-        private void BtnVacina_Click(object sender, EventArgs e)
-        {
-            carregaTela(new Vacinacao());
-        }
+      
 
         private void panelFundo_Paint(object sender, PaintEventArgs e)
         {
@@ -74,7 +74,48 @@ namespace pi_Serasa_Projeto_Saude_lnwk
 
         private void btnSangue_Click_1(object sender, EventArgs e)
         {
+            panelCima.BackColor = Color.DarkRed;
+            panelEsquerdo.BackColor = Color.DarkRed;
+            
+           // panelCima.Size = new Size(ClientSize.Width, panelCima.Height);
+            panelEsquerdo.Size = new Size(panelEsquerdo.Width, ClientSize.Height);
+            
             carregaTela(new Bancosangue());
+        }
+
+        private void btnExame_Click(object sender, EventArgs e)
+        {
+            panelCima.BackColor = Color.SteelBlue;
+            panelEsquerdo.BackColor=Color.SteelBlue;
+
+            carregaTela(new ColetaExame());
+        }
+
+        private void btnVacina_Click_1(object sender, EventArgs e)
+        {
+            panelCima.BackColor = Color.Green;
+            panelEsquerdo.BackColor= Color.Green;
+
+            carregaTela(new Vacinacao());
+        }
+
+        private void btnConsulta_Click(object sender, EventArgs e)
+        {
+            panelEsquerdo.BackColor = Color.Gray;
+            panelCima.BackColor = Color.Gray;
+            carregaTela(new Consulta());
+        }
+
+        private void panelEsquerdo_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void BtnCancelar_Click(object sender, EventArgs e)
+        {
+            carregaTela(new HealtHub());
+            
+
         }
     }
 }
