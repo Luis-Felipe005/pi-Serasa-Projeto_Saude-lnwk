@@ -32,7 +32,7 @@ namespace pi_Serasa_Projeto_Saude_lnwk
         public List<Atendente> buscaTodos()
         {
 
-            string query = "SELECT  FROM atendente WHERE Cpf=;";
+            string query = "SELECT * FROM atendente;";
 
             DataTable resultados = Conexao.executaQuery(query);
             if (resultados == null)

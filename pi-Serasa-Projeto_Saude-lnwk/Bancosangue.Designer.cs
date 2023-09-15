@@ -32,7 +32,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.btnDoarSangue = new System.Windows.Forms.Button();
-            this.btnCancelar = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -52,45 +51,36 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(801, 100);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(252, 28);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(167, 35);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(378, 40);
+            this.label1.Size = new System.Drawing.Size(618, 65);
             this.label1.TabIndex = 0;
             this.label1.Text = "Serviço:Doação de sangue";
             // 
             // btnDoarSangue
             // 
             this.btnDoarSangue.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnDoarSangue.Location = new System.Drawing.Point(21, 17);
+            this.btnDoarSangue.Location = new System.Drawing.Point(8, 3);
             this.btnDoarSangue.Name = "btnDoarSangue";
-            this.btnDoarSangue.Size = new System.Drawing.Size(177, 44);
+            this.btnDoarSangue.Size = new System.Drawing.Size(201, 70);
             this.btnDoarSangue.TabIndex = 1;
             this.btnDoarSangue.Text = "Doar Sangue";
             this.btnDoarSangue.UseVisualStyleBackColor = true;
             this.btnDoarSangue.Click += new System.EventHandler(this.btnDoarSangue_Click_1);
             // 
-            // btnCancelar
-            // 
-            this.btnCancelar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnCancelar.Location = new System.Drawing.Point(56, 80);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(103, 35);
-            this.btnCancelar.TabIndex = 2;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
-            // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.White;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(587, 145);
+            this.pictureBox2.Location = new System.Drawing.Point(598, 3);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(146, 136);
+            this.pictureBox2.Size = new System.Drawing.Size(401, 386);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
@@ -98,9 +88,9 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(84, 177);
+            this.pictureBox3.Location = new System.Drawing.Point(-212, 52);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(160, 104);
+            this.pictureBox3.Size = new System.Drawing.Size(401, 386);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 5;
             this.pictureBox3.TabStop = false;
@@ -109,7 +99,6 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Controls.Add(this.btnDoarSangue);
-            this.panel2.Controls.Add(this.btnCancelar);
             this.panel2.Location = new System.Drawing.Point(306, 154);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(212, 127);
@@ -132,16 +121,16 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1026, 450);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Bancosangue";
             this.Text = "Form2";
-            this.Load += new System.EventHandler(this.Bancosangue_Load_1);
+            this.Load += new System.EventHandler(this.Bancosangue_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -157,7 +146,6 @@
         private Panel panel1;
         private Label label1;
         private Button btnDoarSangue;
-        private Button btnCancelar;
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
         private Panel panel2;
