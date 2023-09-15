@@ -103,6 +103,7 @@
             listView1.TabIndex = 7;
             listView1.UseCompatibleStateImageBehavior = false;
             listView1.View = View.List;
+            listView1.SelectedIndexChanged += listView1_SelectedIndexChanged;
             // 
             // panel2
             // 

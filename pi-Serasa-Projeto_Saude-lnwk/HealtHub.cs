@@ -57,11 +57,7 @@ namespace pi_Serasa_Projeto_Saude_lnwk
         private void btnEntrar_Click(object sender, EventArgs e)
         {
 
-
             Logar();
-
-
-
             
         }
 
@@ -105,11 +101,18 @@ namespace pi_Serasa_Projeto_Saude_lnwk
 
                 MessageBox.Show("Deu erro" + ex);
 
-
-
             }
-        }
 
+        }
+       public void Interligar()
+        {
+
+            string login = "'SELECT * FROM atendente WHERE CPF_ver='41398185817'";
+            MySqlCommand comando = new MySqlCommand(login, conexao1);
+            comando.CommandType = CommandType.Text;
+            MySqlDataReader reader;
+       
+        }
 
 
 
