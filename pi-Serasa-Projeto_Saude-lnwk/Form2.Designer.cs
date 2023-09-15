@@ -41,6 +41,7 @@
             this.btnSangue1 = new System.Windows.Forms.Button();
             this.panelFundo = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.panelCima.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panelEsquerdo.SuspendLayout();
@@ -93,6 +94,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.btnCancelar1);
             this.panel1.Controls.Add(this.btnConsulta1);
             this.panel1.Controls.Add(this.btnVacina1);
@@ -100,7 +102,7 @@
             this.panel1.Controls.Add(this.btnSangue1);
             this.panel1.Location = new System.Drawing.Point(29, 222);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(142, 444);
+            this.panel1.Size = new System.Drawing.Size(142, 526);
             this.panel1.TabIndex = 1;
             // 
             // btnCancelar1
@@ -108,7 +110,7 @@
             this.btnCancelar1.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnCancelar1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCancelar1.ForeColor = System.Drawing.Color.White;
-            this.btnCancelar1.Location = new System.Drawing.Point(9, 366);
+            this.btnCancelar1.Location = new System.Drawing.Point(9, 440);
             this.btnCancelar1.Name = "btnCancelar1";
             this.btnCancelar1.Size = new System.Drawing.Size(130, 66);
             this.btnCancelar1.TabIndex = 6;
@@ -188,6 +190,19 @@
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.DodgerBlue;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(11, 355);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(130, 66);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Atendente";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -226,5 +241,6 @@
         private Button btnExame1;
         private PictureBox pictureBox2;
         private PictureBox pictureBox1;
+        private Button button1;
     }
 }

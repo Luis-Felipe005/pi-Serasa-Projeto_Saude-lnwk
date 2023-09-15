@@ -19,21 +19,10 @@ namespace pi_Serasa_Projeto_Saude_lnwk
 
         private void RecepcaoAtendente_Load(object sender, EventArgs e)
         {
-            Atendente atendente = new Atendente();
-
-            List<Atendente> atendentes = atendente.buscaTodos();
-
-            foreach (Atendente a in atendentes)
-            {
-                listView1.Items.Add(a.nome);
-                listView1.Items.Add(a.cpf);
-                listView1.Items.Add(a.idade.ToString());
-                listView1.Items.Add(a.sexo);
-
-            }
-
-
-
+            listView1.Items.Add(Program.atendente.nome);
+            listView1.Items.Add(Program.atendente.cpf);
+            listView1.Items.Add(Program.atendente.idade.ToString());
+            listView1.Items.Add(Program.atendente.sexo);
         }
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)

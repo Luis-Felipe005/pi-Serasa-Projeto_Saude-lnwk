@@ -72,7 +72,7 @@ namespace pi_Serasa_Projeto_Saude_lnwk
 
         private void Logar()
         {
-            string login = "SELECT CPF, Senha FROM pacientes WHERE CPF='" + txtCpf.Text + "' AND Senha='" + txtSenha.Text + "'";
+            string login = "SELECT CPF, Senha, Sexo, Idade, Nome FROM pacientes WHERE CPF='" + txtCpf.Text + "' AND Senha='" + txtSenha.Text + "'";
             MySqlCommand comando = new MySqlCommand(login, conexao1);
             comando.CommandType = CommandType.Text;
             MySqlDataReader reader;
@@ -88,18 +88,22 @@ namespace pi_Serasa_Projeto_Saude_lnwk
                     usuario = reader[0].ToString();
                     senha = reader[1].ToString();
 
+                    Program.atendente.cpf = usuario;
+                    Program.atendente.sexo = reader[2].ToString();
+                    Program.atendente.idade = int.Parse( reader[3].ToString() );
+                    Program.atendente.nome = reader[4].ToString();
+
                     conexao1.Close();
 
                     if (usuario == txtCpf.Text && senha == txtSenha.Text)
                     {
 
+                        
+
                         Form2 form2 = new Form2();
                         form2.Show();
-                        this.Hide();
-
+                        Hide();
                     }
-
-
                 }
                 else
                 {
@@ -108,22 +112,11 @@ namespace pi_Serasa_Projeto_Saude_lnwk
                     txtCpf.Clear();
                     txtSenha.Clear();
                     conexao1.Close();
-                        
-
-
-
                 }
-
-
             }
-
             catch (Exception ex)
             {
-
                 MessageBox.Show("Deu erro" + ex);
-
-
-
             }
         }
 
