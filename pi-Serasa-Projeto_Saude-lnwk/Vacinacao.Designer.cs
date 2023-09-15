@@ -37,7 +37,6 @@ namespace pi_Serasa_Projeto_Saude_lnwk
             this.lblVacinacao = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnTomarVacina = new System.Windows.Forms.Button();
-            this.btnCancelar = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
@@ -85,16 +84,7 @@ namespace pi_Serasa_Projeto_Saude_lnwk
             this.btnTomarVacina.TabIndex = 2;
             this.btnTomarVacina.Text = "Tomar Vacina";
             this.btnTomarVacina.UseVisualStyleBackColor = true;
-            // 
-            // btnCancelar
-            // 
-            this.btnCancelar.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnCancelar.Location = new System.Drawing.Point(55, 93);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(164, 46);
-            this.btnCancelar.TabIndex = 3;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnTomarVacina.Click += new System.EventHandler(this.btnTomarVacina_Click_1);
             // 
             // pictureBox2
             // 
@@ -111,7 +101,6 @@ namespace pi_Serasa_Projeto_Saude_lnwk
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Controls.Add(this.btnTomarVacina);
-            this.panel2.Controls.Add(this.btnCancelar);
             this.panel2.Location = new System.Drawing.Point(316, 121);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(278, 193);
@@ -145,7 +134,6 @@ namespace pi_Serasa_Projeto_Saude_lnwk
         private Label lblVacinacao;
         private PictureBox pictureBox1;
         private Button btnTomarVacina;
-        private Button btnCancelar;
         private PictureBox pictureBox2;
         private Panel panel2;
     }

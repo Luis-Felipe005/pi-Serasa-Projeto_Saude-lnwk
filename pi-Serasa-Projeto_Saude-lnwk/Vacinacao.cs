@@ -44,7 +44,7 @@ namespace pi_Serasa_Projeto_Saude_lnwk
 
         }
 
-        private void btnTomarVacina_Click(object sender, EventArgs e)
+        private void btnTomarVacina_Click(object sender, EventArgs e)//Não Funciona
         {
 
             MessageBox.Show("Vacina agendada com sucesso!");
@@ -93,6 +93,11 @@ namespace pi_Serasa_Projeto_Saude_lnwk
         private void pictureBox2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnTomarVacina_Click_1(object sender, EventArgs e)//
+        {
+            MessageBox.Show("Vacina agendada com sucesso!");
         }
     }
 }

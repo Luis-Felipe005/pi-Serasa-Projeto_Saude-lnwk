@@ -30,7 +30,7 @@ namespace pi_Serasa_Projeto_Saude_lnwk
             pictureBox1.Dock = DockStyle.Bottom;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)//Não funciona
         {
             MessageBox.Show("Exame coletado!");
         }
@@ -58,6 +58,11 @@ namespace pi_Serasa_Projeto_Saude_lnwk
             panel2.Location = new Point(ClientSize.Width / 2 - panel2.Size.Width / 2, ClientSize.Height / 2 - panel2.Size.Height / 2);
 
             pictureBox1.Dock = DockStyle.Bottom;
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)//
+        {
+            MessageBox.Show("Exame coletado!");
         }
     }
 }

@@ -25,15 +25,14 @@ namespace pi_Serasa_Projeto_Saude_lnwk
 
             panelFundo.Size = new Size(ClientSize.Width - 130, ClientSize.Height -130);
             panelFundo.Location = new Point(ClientSize.Width - 1728, ClientSize.Height - 858);
-
-            labelCima.Location = new Point(ClientSize.Width - 1150, ClientSize.Height - 990);
+            panelCima.Visible=false;
+            
+          pictureBox2.Location = new Point(ClientSize.Width -640, ClientSize.Height - 1015);
            
-
-            panelEsquerdo.Size = new Size(panelEsquerdo.Width, ClientSize.Height);
+           
+           panelEsquerdo.Size = new Size(panelEsquerdo.Width, ClientSize.Height);
             panelCima.Size = new Size(ClientSize.Width, panelCima.Height);
          
-
-           
 
 
             //this.Controls.Add(pictureBox1); // Adiciona a PictureBox ao formulário
@@ -74,23 +73,26 @@ namespace pi_Serasa_Projeto_Saude_lnwk
 
         private void btnSangue_Click_1(object sender, EventArgs e)
         {
+            
             panelCima.BackColor = Color.DarkRed;
             panelEsquerdo.BackColor = Color.DarkRed;
             
            // panelCima.Size = new Size(ClientSize.Width, panelCima.Height);
             panelEsquerdo.Size = new Size(panelEsquerdo.Width, ClientSize.Height);
-            
+
+            panelCima.Visible = true;
             carregaTela(new Bancosangue());
         }
 
         private void btnExame_Click(object sender, EventArgs e)
         {
+           
             panelCima.BackColor = Color.SteelBlue;
             panelEsquerdo.BackColor=Color.SteelBlue;
 
             carregaTela(new ColetaExame());
         }
-
+         
         private void btnVacina_Click_1(object sender, EventArgs e)
         {
             panelCima.BackColor = Color.Green;
@@ -98,7 +100,7 @@ namespace pi_Serasa_Projeto_Saude_lnwk
 
             carregaTela(new Vacinacao());
         }
-
+        
         private void btnConsulta_Click(object sender, EventArgs e)
         {
             panelEsquerdo.BackColor = Color.Gray;
@@ -113,9 +115,46 @@ namespace pi_Serasa_Projeto_Saude_lnwk
 
         private void BtnCancelar_Click(object sender, EventArgs e)
         {
+            
             carregaTela(new HealtHub());
             
 
         }
+
+        private void btnExame1_Click(object sender, EventArgs e)//
+        {
+            panelCima.BackColor = Color.SteelBlue;
+            panelEsquerdo.BackColor = Color.SteelBlue;
+
+            carregaTela(new ColetaExame());
+        }
+
+        private void btnVacina1_Click(object sender, EventArgs e)//
+        {
+            panelCima.BackColor = Color.Green;
+            panelEsquerdo.BackColor = Color.Green;
+
+            carregaTela(new Vacinacao());
+        }
+
+        private void btnConsulta1_Click(object sender, EventArgs e)//
+        {
+            panelEsquerdo.BackColor = Color.Gray;
+            panelCima.BackColor = Color.Gray;
+            carregaTela(new Consulta());
+        }
+
+        private void btnCancelar1_Click(object sender, EventArgs e)//
+        {
+           
+            panel1.Visible= false;
+            labelCima.Visible=false;
+            panelEsquerdo.BackColor = Color.MidnightBlue;
+            panelCima.BackColor = Color.MidnightBlue;
+            carregaTela(new HealtHub());
+
+        }
+
+        
     }
 }

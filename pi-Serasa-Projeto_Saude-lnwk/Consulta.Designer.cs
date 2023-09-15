@@ -33,7 +33,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -55,10 +54,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(341, 43);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(270, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(108, 30);
+            this.label1.Size = new System.Drawing.Size(246, 65);
             this.label1.TabIndex = 0;
             this.label1.Text = "Consultas";
             // 
@@ -72,22 +71,11 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.button2);
             this.panel3.Controls.Add(this.button1);
             this.panel3.Location = new System.Drawing.Point(239, 103);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(296, 160);
             this.panel3.TabIndex = 2;
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button2.Location = new System.Drawing.Point(108, 106);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 36);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Cancelar";
-            this.button2.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
@@ -98,6 +86,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "Realizar Consulta";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // pictureBox1
             // 
@@ -149,7 +138,6 @@
         private Panel panel2;
         private Panel panel3;
         private Label label1;
-        private Button button2;
         private Button button1;
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;

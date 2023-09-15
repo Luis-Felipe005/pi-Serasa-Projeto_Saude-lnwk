@@ -19,10 +19,10 @@ namespace pi_Serasa_Projeto_Saude_lnwk
 
        
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)//Não fununcia
         {
             
-            MessageBox.Show("Consulta agendada , aguarde!");
+            
 
         }
 
@@ -74,6 +74,11 @@ namespace pi_Serasa_Projeto_Saude_lnwk
         private void pictureBox2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)//
+        {
+            MessageBox.Show("Consulta agendada , aguarde!");
         }
     }
 }
