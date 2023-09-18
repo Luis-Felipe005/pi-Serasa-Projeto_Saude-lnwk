@@ -67,7 +67,7 @@ namespace pi_Serasa_Projeto_Saude_lnwk
             //int centralizar = 500; // Ajuste este valor conforme necessário
             //pictureBox2.Location = new Point(offsetX, ClientSize.Height /  - pictureBox2.Size.Height / 2 + 400);
 
-            pictureBox2.Location = new Point(ClientSize.Width / 2 - pictureBox2.Size.Width / 5 + 150, ClientSize.Height / 2 - pictureBox2.Size.Height / 1 + 50);
+            pictureBox2.Location = new Point(ClientSize.Width / 2 - pictureBox2.Size.Width / 5 + 350, ClientSize.Height / 2 - pictureBox2.Size.Height / 1 + 50);
 
         }
 

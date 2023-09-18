@@ -73,7 +73,8 @@ namespace pi_Serasa_Projeto_Saude_lnwk
 
         private void btnSangue_Click_1(object sender, EventArgs e)
         {
-            
+            RecepcaoAtendente recepcaoAtendente= new RecepcaoAtendente();
+            recepcaoAtendente.Show();
             panelCima.BackColor = Color.DarkRed;
             panelEsquerdo.BackColor = Color.DarkRed;
             
@@ -87,6 +88,7 @@ namespace pi_Serasa_Projeto_Saude_lnwk
         private void btnExame_Click(object sender, EventArgs e)
         {
            
+
             panelCima.BackColor = Color.SteelBlue;
             panelEsquerdo.BackColor=Color.SteelBlue;
 
@@ -95,6 +97,7 @@ namespace pi_Serasa_Projeto_Saude_lnwk
          
         private void btnVacina_Click_1(object sender, EventArgs e)
         {
+            ;
             panelCima.BackColor = Color.Green;
             panelEsquerdo.BackColor= Color.Green;
 
@@ -103,6 +106,8 @@ namespace pi_Serasa_Projeto_Saude_lnwk
         
         private void btnConsulta_Click(object sender, EventArgs e)
         {
+            RecepcaoAtendente recepcaoAtendente = new RecepcaoAtendente();
+            recepcaoAtendente.Show();
             panelEsquerdo.BackColor = Color.Gray;
             panelCima.BackColor = Color.Gray;
             carregaTela(new Consulta());
@@ -123,6 +128,8 @@ namespace pi_Serasa_Projeto_Saude_lnwk
 
         private void btnExame1_Click(object sender, EventArgs e)//
         {
+            RecepcaoAtendente recepcaoAtendente = new RecepcaoAtendente();
+            recepcaoAtendente.Show();
             panelCima.BackColor = Color.SteelBlue;
             panelEsquerdo.BackColor = Color.SteelBlue;
 
@@ -131,6 +138,8 @@ namespace pi_Serasa_Projeto_Saude_lnwk
 
         private void btnVacina1_Click(object sender, EventArgs e)//
         {
+            RecepcaoAtendente recepcaoAtendente = new RecepcaoAtendente();
+            recepcaoAtendente.Show();
             panelCima.BackColor = Color.Green;
             panelEsquerdo.BackColor = Color.Green;
 
@@ -139,6 +148,8 @@ namespace pi_Serasa_Projeto_Saude_lnwk
 
         private void btnConsulta1_Click(object sender, EventArgs e)//
         {
+            RecepcaoAtendente recepcaoAtendente = new RecepcaoAtendente();
+            recepcaoAtendente.Show();
             panelEsquerdo.BackColor = Color.Gray;
             panelCima.BackColor = Color.Gray;
             carregaTela(new Consulta());
@@ -146,7 +157,7 @@ namespace pi_Serasa_Projeto_Saude_lnwk
 
         private void btnCancelar1_Click(object sender, EventArgs e)//
         {
-           
+            panelCima.Visible = true;
             panel1.Visible= false;
             labelCima.Visible=false;
             panelEsquerdo.BackColor = Color.MidnightBlue;

@@ -19,6 +19,7 @@ namespace pi_Serasa_Projeto_Saude_lnwk
 
         private void RecepcaoAtendente_Load(object sender, EventArgs e)
         {
+            panel1.Size = new Size(ClientSize.Width, panel1.Height);
             listView1.Items.Add(Program.atendente.nome);
             listView1.Items.Add(Program.atendente.cpf);
             listView1.Items.Add(Program.atendente.idade.ToString());
@@ -33,11 +34,18 @@ namespace pi_Serasa_Projeto_Saude_lnwk
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnRecusar_Click(object sender, EventArgs e)
         {
          
+            HealtHub healtHub= new HealtHub();
+            healtHub.Show();
 
+        }
 
+        private void btnAceitar_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Paciente aceito!");
+            this.Close();
         }
     }
 }

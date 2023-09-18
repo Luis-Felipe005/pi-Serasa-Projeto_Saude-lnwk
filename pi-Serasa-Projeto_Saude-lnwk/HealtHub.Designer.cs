@@ -66,6 +66,7 @@
             this.txtCpf.Name = "txtCpf";
             this.txtCpf.Size = new System.Drawing.Size(256, 23);
             this.txtCpf.TabIndex = 1;
+            this.txtCpf.Text = "41398185817";
             // 
             // label2
             // 
@@ -95,6 +96,7 @@
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(256, 23);
             this.txtSenha.TabIndex = 2;
+            this.txtSenha.Text = "3412";
             // 
             // lblBemvindo
             // 

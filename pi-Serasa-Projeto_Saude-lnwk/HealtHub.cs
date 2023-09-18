@@ -25,9 +25,10 @@ namespace pi_Serasa_Projeto_Saude_lnwk
 
              //panel1.Size = new Size(ClientSize.Width, 100);
 
-              lblBemvindo.Location = new Point(ClientSize.Width /2-100 - lblBemvindo.Size.Width / 2);
+              lblBemvindo.Location = new Point(ClientSize.Width /2-400 - lblBemvindo.Height / 2+60 );
 
-              painelMeio.Location = new Point(ClientSize.Width /2-100 - painelMeio.Size.Width /2, ClientSize.Height/2-240 - painelMeio.Size.Height / 2);
+           // painelMeio.Location = new Point(ClientSize.Width /2-100 - painelMeio.Size.Width /2, ClientSize.Height/2-240 - painelMeio.Size.Height / 2);
+            painelMeio.Location = new Point(ClientSize.Width / 2 - painelMeio.Size.Width / 2, ClientSize.Height / 2 - painelMeio.Size.Height / 2);
 
         }
 

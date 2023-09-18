@@ -51,7 +51,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(801, 100);
             this.panel1.TabIndex = 0;
-            //this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label1
             // 
@@ -114,7 +113,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
-            //this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Bancosangue
             // 
@@ -130,7 +128,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Bancosangue";
             this.Text = "Form2";
-            //this.Load += new System.EventHandler(this.Bancosangue_Load);
+            this.Load += new System.EventHandler(this.Bancosangue_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

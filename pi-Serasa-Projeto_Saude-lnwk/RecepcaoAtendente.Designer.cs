@@ -33,8 +33,8 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.listView1 = new System.Windows.Forms.ListView();
             this.label2 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnRecusar = new System.Windows.Forms.Button();
+            this.btnAceitar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -87,26 +87,27 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "INFORMAÇÕES DO PACIENTE";
             // 
-            // button2
+            // btnRecusar
             // 
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button2.Location = new System.Drawing.Point(540, 374);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(121, 64);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "RECUSAR";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnRecusar.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnRecusar.Location = new System.Drawing.Point(540, 374);
+            this.btnRecusar.Name = "btnRecusar";
+            this.btnRecusar.Size = new System.Drawing.Size(121, 64);
+            this.btnRecusar.TabIndex = 3;
+            this.btnRecusar.Text = "RECUSAR";
+            this.btnRecusar.UseVisualStyleBackColor = true;
+            this.btnRecusar.Click += new System.EventHandler(this.btnRecusar_Click);
             // 
-            // button1
+            // btnAceitar
             // 
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(390, 374);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(121, 64);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "ACEITAR";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAceitar.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnAceitar.Location = new System.Drawing.Point(390, 374);
+            this.btnAceitar.Name = "btnAceitar";
+            this.btnAceitar.Size = new System.Drawing.Size(121, 64);
+            this.btnAceitar.TabIndex = 4;
+            this.btnAceitar.Text = "ACEITAR";
+            this.btnAceitar.UseVisualStyleBackColor = true;
+            this.btnAceitar.Click += new System.EventHandler(this.btnAceitar_Click);
             // 
             // RecepcaoAtendente
             // 
@@ -114,10 +115,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(137)))), ((int)(((byte)(245)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnAceitar);
+            this.Controls.Add(this.btnRecusar);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "RecepcaoAtendente";
             this.Text = "RecepcaoAtendente";
             this.Load += new System.EventHandler(this.RecepcaoAtendente_Load);
@@ -136,7 +138,7 @@
         private Panel panel2;
         private ListView listView1;
         private Label label2;
-        private Button button2;
-        private Button button1;
+        private Button btnRecusar;
+        private Button btnAceitar;
     }
 }

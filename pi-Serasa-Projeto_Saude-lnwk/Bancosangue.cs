@@ -145,6 +145,49 @@ namespace pi_Serasa_Projeto_Saude_lnwk
             // Inicia o temporizador
             timer.Start();
         }
+
+        private void Bancosangue_Load(object sender, EventArgs e)
+        {
+            panel = new Panel();
+            panel.BackColor = System.Drawing.Color.Red;
+            panel.Dock = DockStyle.Top;
+            panel.Height = 100;
+
+            Controls.Add(panel);
+
+            KeyDown += MainForm_KeyDown;
+
+            WindowState = FormWindowState.Maximized;
+
+
+
+            // Configurar a ancoragem dos controles para se adaptarem automaticamente ao redimensionamento
+            panel1.Dock = DockStyle.Top;
+            panel2.Size = new Size(300, 200); // Defina o tamanho desejado para o panel2
+            panel2.Location = new Point((ClientSize.Width - panel2.Width) / 2, (ClientSize.Height - panel2.Height) / 2);
+            pictureBox1.Dock = DockStyle.Bottom;
+
+            // Criar um TableLayoutPanel dentro do panel1
+            TableLayoutPanel tableLayoutPanel = new TableLayoutPanel();
+            tableLayoutPanel.Dock = DockStyle.Fill;
+            tableLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100));
+            tableLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 100));
+            panel1.Controls.Add(tableLayoutPanel);
+
+            // Adicione o label1 ao TableLayoutPanel e centralize-o
+            label1.AutoSize = true;
+            label1.Anchor = AnchorStyles.None;
+            label1.TextAlign = ContentAlignment.MiddleCenter;
+            tableLayoutPanel.Controls.Add(label1, 0, 0);
+
+            // Posicione as imagens (pictureBox2 e pictureBox3) conforme necessário
+            int offsetX = 500;
+            pictureBox2.Location = new Point(ClientSize.Width / 2 - pictureBox2.Width / 2 + offsetX, ClientSize.Height / 2 - pictureBox2.Height / 2 + 50);
+            pictureBox3.Location = new Point(ClientSize.Width / 2 - pictureBox3.Width / 2 - 500, ClientSize.Height / 2 - pictureBox3.Height / 2 + 50);
+
+            // Adicione um manipulador de evento para SizeChanged do panel1
+            panel1.SizeChanged += Panel1_SizeChanged;
+        }
     }
 }
 
